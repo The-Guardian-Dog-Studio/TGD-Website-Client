@@ -18,7 +18,7 @@ const Logo = (props: LogoProps): JSX.Element => {
         }}
         viewBox="1000 1000 9300.85 4694.74"
         {...props}
-        className={`h-12 w-24 ${props.className}`}
+        className={`h-12 w-24 fill-brand-red ${props.className}`}
       >
         <defs id="defs1">
           <style id="style1" type="text/css">

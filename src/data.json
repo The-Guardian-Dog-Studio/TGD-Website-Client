@@ -1,0 +1,19 @@
+{
+  "social-media": [
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/tgdgames/",
+      "icon": "facebook-outline"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/tgdgames/",
+      "icon": "instagram-outline"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/TheGuardianDogS",
+      "icon": "twitter-outline"
+    }
+  ]
+}
