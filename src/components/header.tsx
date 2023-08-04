@@ -11,7 +11,7 @@ const Header = (): JSX.Element => {
 				<div className="flex items-center gap-6">
 					<Logo />
 
-					<nav>
+					<nav className="hidden md:block">
 						<ul className="flex h-full items-center gap-6 font-display text-brand-blue">
 							<li>
 								<a href="#games">Jogos</a>
@@ -29,7 +29,7 @@ const Header = (): JSX.Element => {
 					</nav>
 				</div>
 
-				<div className="flex items-center gap-4">
+				<div className="hidden items-center gap-4 md:flex">
 					<nav>
 						<SocialMedia platforms={socialMediaPlatforms} />
 					</nav>
