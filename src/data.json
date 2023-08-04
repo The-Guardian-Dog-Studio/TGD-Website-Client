@@ -1,4 +1,7 @@
 {
+  "featured-game": {
+    "bannerUrl": "/together.png"
+  },
   "social-media": [
     {
       "name": "Facebook",
