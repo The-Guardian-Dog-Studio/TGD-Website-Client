@@ -1,3 +1,5 @@
+--- 
+import { Header } from '@/components';
 
 interface Props {
 	title: string;
@@ -21,6 +23,7 @@ const { title, description } = Astro.props;
 		<meta name="description" content={description ?? "A TGD é uma empresa junior de jogos. E está pronta para reunir a sua matilhas para a sua próxima aventura em jogos."} />
 	</head>
 	<body>
+		<Header />
 		<slot />
 	</body>
 </html>
