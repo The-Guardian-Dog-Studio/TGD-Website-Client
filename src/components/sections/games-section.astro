@@ -1,0 +1,75 @@
+---
+import { Game } from "@/domain/protocols/game";
+import siteData from "@/data.json";
+import { Game as GameComponent, Heading } from "@/components";
+
+const games: Game[] = siteData["games"];
+---
+
+<section
+  id="games"
+  class="mx-auto mt-14 w-11/12 max-w-screen-lg flex flex-col gap-10 items-center overflow-x-hidden"
+>
+  <Heading level={1}>Jogos</Heading>
+  <section
+    id="games-carousel"
+    class="splide overflow-x-hidden min-h-[550px]"
+    aria-label="Todos os Jogos da TGD Studio"
+  >
+    <div class="splide__track">
+      <ul class="splide__list max-w-[80vw]">
+        {
+          games.map((game, index) => (
+            <li class={`splide__slide blur-[${index * 0.2}px]`}>
+              <GameComponent {...game} />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Splide("#games-carousel", {
+			width: "80vw",
+			type: "loop",
+			width: "1024px",
+			focus: "center",
+			autoWidth: true,
+			lazyLoad: 'nearby' ,
+			gap: "1rem", 
+			perMove: 3,
+
+			mediaQuery: "min",
+			breakpoints: {
+				0: {
+					perPage: 1,
+				},
+				700: {
+					perPage: 2,
+				},
+				1440: {
+					perPage: 3,
+				},
+				2560: {
+					perPage: 4,
+				}
+			},
+
+
+			classes: {
+				arrows: 'splide__arrows bg-white',
+				arrow : 'items-center cursor-pointer flex h-[2em] justify-center opacity-70 absolute -translate-y-2/4 w-[2em] z-[1] p-0 rounded-[50%] border-0 top-2/4 fill-brand-red',
+
+				page  : 'splide__pagination__page__custom bg-gray-900 h-4 w-4 inline-block opacity-70 relative transition-transform duration-[0.2s] ease-linear m-[3px] p-0 rounded-[50%] border-0',
+			},
+    }).mount();
+  });
+</script>
+
+<style is:global>
+	button.splide__pagination__page__custom.is-active{
+		@apply bg-brand-red opacity-100 scale-125;
+	}
+</style>
