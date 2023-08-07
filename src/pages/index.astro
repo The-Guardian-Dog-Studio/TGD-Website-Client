@@ -1,6 +1,6 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import { FeaturedSection } from '@/components';
+import { FeaturedSection, AboutSection } from '@/components';
 
 import GamesSection from '@/components/sections/games-section.astro';
 ---
@@ -9,6 +9,7 @@ import GamesSection from '@/components/sections/games-section.astro';
 	<main class="w-full">
 		<FeaturedSection/>
 		<GamesSection />
+		<AboutSection client:load />
 	</main>
 </Layout>
 
