@@ -1,4 +1,4 @@
-import { Button, Heading, Section } from "@/components";
+import { Button, Heading, Image, Section } from "@/components";
 import { Tabs } from "@/components/ui";
 import type { AboutProtocol } from "@/domain/protocols/about-protocol";
 import data from "@/data.json";
@@ -10,7 +10,7 @@ const AboutSection = (): JSX.Element => {
 		<Section id="about" className="gap-16">
 			<Heading level={1}>Sobre Nós</Heading>
 			<div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-24">
-				<img
+				<Image
 					src={aboutData.banner.url}
 					alt={aboutData.banner.alt}
 					className="h-fit w-full object-contain"

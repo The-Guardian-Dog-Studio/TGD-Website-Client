@@ -1,4 +1,4 @@
-import { Logo, SocialMedia } from "@/components";
+import { Link, Logo, SocialMedia } from "@/components";
 
 import data from "../data.json";
 
@@ -14,16 +14,16 @@ const Header = (): JSX.Element => {
 					<nav className="hidden md:block">
 						<ul className="flex h-full items-center gap-6 font-display text-brand-blue">
 							<li>
-								<a href="#games">Jogos</a>
+								<Link href="#games">Jogos</Link>
 							</li>
 							<li>
-								<a href="#about">Sobre Nós</a>
+								<Link href="#about">Sobre Nós</Link>
 							</li>
 							<li>
-								<a href="#contact">Contato</a>
+								<Link href="#contact">Contato</Link>
 							</li>
 							<li>
-								<a href="/press-kit">Press Kit</a>
+								<Link href="/press-kit">Press Kit</Link>
 							</li>
 						</ul>
 					</nav>
