@@ -1,14 +1,13 @@
 ---
 import { Game } from "@/domain/protocols/game";
 import siteData from "@/data.json";
-import { Game as GameComponent, Heading } from "@/components";
+import { Game as GameComponent, Heading, Section } from "@/components";
 
 const games: Game[] = siteData["games"];
 ---
 
-<section
+<Section
   id="games"
-  class="mx-auto mt-14 w-11/12 max-w-screen-lg flex flex-col gap-10 items-center overflow-x-hidden"
 >
   <Heading level={1}>Jogos</Heading>
   <section
@@ -28,6 +27,7 @@ const games: Game[] = siteData["games"];
       </ul>
     </div>
   </section>
+</Section>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
