@@ -1,6 +1,6 @@
 {
   "featured-game": {
-    "bannerUrl": "/together.png"
+    "bannerUrl": "/call-of-the-racket-banner.png"
   },
   "games": [
     {
@@ -24,6 +24,46 @@
       "name": "Call of the Racket"
     }
   ],
+  "about": {
+    "banner": {
+      "url": "/tgd-team.jpg",
+      "alt": "Foto da equipe da TGD Studio"
+    },
+    "tabs": [
+      {
+        "title": "Descrição",
+        "content": "A The Guardian Dog Studio ou TGD Studio é uma Empresa Júnior (EJ) de desenvolvimento de jogos, significando que nossas atividades não visam ao lucro, e toda renda gerada a partir de nossos produtos é reinvestida na estrutura e no bem-estar de nossa matilha (forma que chamamos todos os nossos funcionários colaboradores). Temos como missão desenvolver jogos de excelência a preços acessíveis, expandindo o mercado Brasileiro. Não queremos ser os únicos e maiores, queremos servir de norte para toda uma geração de possíveis desenvolvedores, mostrando que é sim possível desenvolver jogos no Brasil como profissão!",
+        "link": {
+          "text": "Press Kit",
+          "url": "/press-kit"
+        }
+      },
+      {
+        "title": "História",
+        "content": "Fundada no dia 04/10/2019 (Dia internacional do Cachorro!), o The Guardian Dog Studio ou TGD Studio foi o sonho de um grupo de alunos do curso de Sistemas e Mídias Digitais (SMD) da Universidade Federal do Ceará (UFC) que queriam entrar no mercado de jogos enquanto ainda estavam no processo de formação acadêmica. Para tornar esse sonho realidade, juntos eles decidiram abrir um estúdio indie dentro da própria universidade, e o chamaram de The Guardian Dog Studio.",
+        "link": {
+          "text": "Press Kit",
+          "url": "/press-kit"
+        }
+      }
+    ]
+  },
+  "contact": {
+    "email": [
+      {
+        "text": "Fale Conosco",
+        "email": "contato@tgdstudio.com.br"
+      },
+      {
+        "text": "Envie seu feedback",
+        "email": "feedback@tgdstudio.com.br"
+      },
+      {
+        "text": "Parcerias",
+        "email": "contact@tgdstudio.com.br"
+      }
+    ]
+  },
   "social-media": [
     {
       "name": "Facebook",
