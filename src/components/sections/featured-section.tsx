@@ -6,6 +6,7 @@ const featuredSectionData: FeaturedGame = siteData["featured-game"];
 const FeaturedSection = (): JSX.Element => {
 	return (
 		<section
+			id="featured-game"
 			className="relative mt-[-5rem] grid h-screen w-full place-items-center"
 			style={{
 				background: `url(${featuredSectionData.bannerUrl})`,
