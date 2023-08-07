@@ -1,3 +1,4 @@
+import { Link } from "@/components";
 import { GetIcon } from "@/components/icons";
 import type { SocialMediaPlatform } from "@/domain/protocols/social-media-platform";
 
@@ -19,12 +20,12 @@ const SocialMedia = ({
 			<ul className={`flex gap-4 ${className}`}>
 				{platforms.map((platform) => (
 					<li key={platform.name}>
-						<a href={platform.url} title={platform.name}>
+						<Link noPrefix href={platform.url} title={platform.name}>
 							<GetIcon
 								name={platform.icon}
 								className={`fill-brand-blue ${icons?.className}`}
 							/>
-						</a>
+						</Link>
 					</li>
 				))}
 			</ul>
