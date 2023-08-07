@@ -1,6 +1,6 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import { FeaturedSection, AboutSection } from '@/components';
+import { FeaturedSection, AboutSection, ContactSection } from '@/components';
 
 import GamesSection from '@/components/sections/games-section.astro';
 ---
@@ -10,6 +10,7 @@ import GamesSection from '@/components/sections/games-section.astro';
 		<FeaturedSection/>
 		<GamesSection />
 		<AboutSection client:load />
+		<ContactSection />
 	</main>
 </Layout>
 
