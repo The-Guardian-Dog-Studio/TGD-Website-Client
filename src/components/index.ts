@@ -1,5 +1,6 @@
 export { default as Button } from "./button";
 export { default as Header } from "./header";
+export { default as Footer } from "./footer";
 export { default as Game } from "./game";
 export { default as Heading } from "./heading";
 export { default as SocialMedia } from "./social-media";
