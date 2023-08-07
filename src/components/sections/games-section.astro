@@ -13,14 +13,14 @@ const games: Game[] = siteData["games"];
   <Heading level={1}>Jogos</Heading>
   <section
     id="games-carousel"
-    class="splide overflow-x-hidden min-h-[550px]"
+    class="splide overflow-x-hidden min-h-[450px] md:min-h-[550px]"
     aria-label="Todos os Jogos da TGD Studio"
   >
     <div class="splide__track">
       <ul class="splide__list max-w-[80vw]">
         {
-          games.map((game, index) => (
-            <li class={`splide__slide blur-[${index * 0.2}px]`}>
+          games.map((game) => (
+            <li class={`splide__slide`}>
               <GameComponent {...game} />
             </li>
           ))
@@ -32,28 +32,30 @@ const games: Game[] = siteData["games"];
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     new Splide("#games-carousel", {
-			width: "80vw",
 			type: "loop",
 			width: "1024px",
 			focus: "center",
 			autoWidth: true,
 			lazyLoad: 'nearby' ,
 			gap: "1rem", 
-			perMove: 3,
 
 			mediaQuery: "min",
 			breakpoints: {
 				0: {
 					perPage: 1,
+					perMove: 1,
 				},
 				700: {
 					perPage: 2,
+					perMove: 1,
 				},
 				1440: {
 					perPage: 3,
+					perMove: 2,
 				},
 				2560: {
 					perPage: 4,
+					perMove: 3,
 				}
 			},
 
