@@ -48,6 +48,22 @@
       }
     ]
   },
+  "contact": {
+    "email": [
+      {
+        "text": "Fale Conosco",
+        "email": "contato@tgdstudio.com.br"
+      },
+      {
+        "text": "Envie seu feedback",
+        "email": "feedback@tgdstudio.com.br"
+      },
+      {
+        "text": "Parcerias",
+        "email": "contact@tgdstudio.com.br"
+      }
+    ]
+  },
   "social-media": [
     {
       "name": "Facebook",
