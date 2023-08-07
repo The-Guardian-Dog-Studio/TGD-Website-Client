@@ -1,8 +1,18 @@
 import { Link } from "@/components";
 
-interface LogoProps extends React.SVGProps<SVGSVGElement> { }
+const variantsTable = {
+	gray: "fill-gray-800",
+	red: "fill-brand-red",
+	blue: "fill-brand-blue",
+};
 
-const Logo = (props: LogoProps): JSX.Element => {
+interface LogoProps extends React.SVGProps<SVGSVGElement> {
+	variant?: keyof typeof variantsTable;
+}
+
+const Logo = ({ variant = "red", ...props }: LogoProps): JSX.Element => {
+	const fill = variantsTable[variant];
+
 	return (
 		<Link href="/">
 			<svg
@@ -20,7 +30,7 @@ const Logo = (props: LogoProps): JSX.Element => {
 				}}
 				viewBox="1000 1000 9300.85 4694.74"
 				{...props}
-				className={`h-12 w-24 fill-brand-red ${props.className}`}
+				className={`h-12 w-24 ${props.className} ${fill}`}
 			>
 				<defs id="defs1">
 					<style id="style1" type="text/css">
@@ -30,11 +40,8 @@ const Logo = (props: LogoProps): JSX.Element => {
 				<g id="Camada_x0020_1">
 					<g id="_2955460227664">
 						<path
-							id="polygon2"
 							d="M2209.708 914.877 901.598 2223.009v3488.338h1744.169l581.367-581.367 581.657.223 292.53.133-2.046-2.292c15.44 0 30.588-1.235 45.388-3.515 3.92-.65 7.85-1.331 11.77-2.091a285.407 285.407 0 0 0 62.341-20.069c3.57-1.58 7.14-3.268 10.59-5.028 3.57-1.75 7.097-3.61 10.547-5.54a301.886 301.886 0 0 0 15.841-9.434c1.99-1.29 3.988-2.576 5.918-3.916 3.86-2.57 7.597-5.26 11.347-8.01l.045-.066c11.23-8.36 21.763-17.537 31.593-27.367 52.58-52.53 85.161-125.063 85.281-205.202V3385.81h-581.367l-436.06 436.014-436.036-436.014h872.095L2646.813 2223.009h-1.046V1786.95l-436.059 436.06V914.876z"
-							style={{
-								fill: "#bf013d",
-							}}
+							id="polygon2"
 						/>
 						<g id="g8">
 							<path
