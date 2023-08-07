@@ -2,6 +2,28 @@
   "featured-game": {
     "bannerUrl": "/together.png"
   },
+  "games": [
+    {
+      "bannerUrl": "/super-gattai.jpg",
+      "url": "https://negative-one.itch.io/super-gattai",
+      "name": "Super Gattai"
+    },
+    {
+      "bannerUrl": "/call-of-the-racket.png",
+      "url": "https://tgdstudio.itch.io/call-of-the-racket",
+      "name": "Call of the Racket"
+    },
+    {
+      "bannerUrl": "/super-gattai.jpg",
+      "url": "https://negative-one.itch.io/super-gattai",
+      "name": "Super Gattai"
+    },
+    {
+      "bannerUrl": "/call-of-the-racket.png",
+      "url": "https://tgdstudio.itch.io/call-of-the-racket",
+      "name": "Call of the Racket"
+    }
+  ],
   "social-media": [
     {
       "name": "Facebook",
