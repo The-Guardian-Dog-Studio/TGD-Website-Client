@@ -20,6 +20,7 @@ const Footer = (): JSX.Element => {
 				noAnimation
 				href="#featured-game"
 				className="mb-[-1.55rem] block self-center"
+				aria-label="Voltar para o topo da página"
 			>
 				<span className="block h-12 w-12 bg-brand-red [clip-path:polygon(50%_0%,0_50%,100%_50%)]"></span>
 			</Link>
