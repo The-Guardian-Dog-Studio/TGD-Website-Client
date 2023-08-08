@@ -1,5 +1,5 @@
-import { Game } from "@/domain/protocols/game";
 import { Button, Image, Link } from "@/components";
+import { Game } from "@/domain/protocols/game";
 
 interface GameProps extends Game { }
 

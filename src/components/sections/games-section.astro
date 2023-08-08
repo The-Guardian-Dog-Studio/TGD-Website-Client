@@ -1,7 +1,7 @@
 ---
-import { Game } from "@/domain/protocols/game";
-import siteData from "@/data.json";
-import { Game as GameComponent, Heading, Section } from "@/components";
+import { Game as GameComponent, Heading, Section } from '@/components';
+import siteData from '@/data.json';
+import { Game } from '@/domain/protocols/game';
 
 const games: Game[] = siteData["games"];
 ---
@@ -12,7 +12,7 @@ const games: Game[] = siteData["games"];
   <Heading level={1}>Jogos</Heading>
   <section
     id="games-carousel"
-    class="splide overflow-x-hidden min-h-[450px] md:min-h-[550px]"
+    class="splide min-h-[450px] overflow-x-hidden md:min-h-[550px]"
     aria-label="Todos os Jogos da TGD Studio"
   >
     <div class="splide__track">

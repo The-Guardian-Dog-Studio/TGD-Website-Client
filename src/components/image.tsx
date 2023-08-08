@@ -5,7 +5,6 @@ interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
 }
 
 const Image = ({
-	children,
 	noPrefixOnSrc = false,
 	...props
 }: ImageProps): JSX.Element => {
