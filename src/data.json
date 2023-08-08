@@ -1,4 +1,22 @@
 {
+  "navigation": [
+    {
+      "text": "Jogos",
+      "url": "#games"
+    },
+    {
+      "text": "Sobre Nós",
+      "url": "#about"
+    },
+    {
+      "text": "Contato",
+      "url": "#contact"
+    },
+    {
+      "text": "Press Kit",
+      "url": "/press-kit"
+    }
+  ],
   "featured-game": {
     "bannerUrl": "/call-of-the-racket-banner.png"
   },
