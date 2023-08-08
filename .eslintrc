@@ -1,37 +1,66 @@
 {
-	"extends": [
-		"plugin:astro/recommended",
-		"plugin:tailwindcss/recommended"
-	],
-	"plugins": [
-		"react",
-		"unused-imports",
-		"tailwindcss",
-		"simple-import-sort",
-		"prettier"
-	],
-	"parser": "@typescript-eslint/parser",
-	"parserOptions": {
-		"ecmaFeatures": {
-			"jsx": true
-		},
-		"ecmaVersion": "latest",
-		"sourceType": "module",
-		"project": "./tsconfig.json"
-	},
-	"overrides": [
-		{
-			"files": [
-				"*.astro"
-			],
-			"parser": "astro-eslint-parser",
-			"parserOptions": {
-				"parser": "@typescript-eslint/parser",
-				"extraFileExtensions": [
-					".astro"
-				]
-			},
-			"rules": {}
-		}
-	]
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:astro/recommended",
+    "plugin:tailwindcss/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "plugin:jsx-a11y/recommended",
+    "prettier"
+  ],
+  "plugins": [
+    "react",
+    "tailwindcss",
+    "unused-imports",
+    "import",
+    "simple-import-sort"
+  ],
+  "env": {
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "node": true,
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  },
+  "rules": {
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "import/namespace": [
+      2,
+      {
+        "allowComputed": true
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["*.astro"],
+      "parser": "astro-eslint-parser",
+      "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "extraFileExtensions": [".astro"]
+      },
+      "rules": {}
+    }
+  ]
 }

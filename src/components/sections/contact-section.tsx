@@ -1,6 +1,6 @@
-import { ContactData } from "@/domain/protocols/contact-protocol";
 import { Heading, Link, Section } from "@/components";
 import data from "@/data.json";
+import { ContactData } from "@/domain/protocols/contact-protocol";
 
 const contactData: ContactData = data["contact"];
 
