@@ -1,6 +1,7 @@
-import { SocialMediaPlatform } from "@/domain/protocols/social-media-platform";
-import { Link, Logo, SocialMedia } from ".";
 import data from "@/data.json";
+import { SocialMediaPlatform } from "@/domain/protocols/social-media-platform";
+
+import { Link, Logo, SocialMedia } from ".";
 
 const socialMediaPlatforms: SocialMediaPlatform[] = data["social-media"];
 
@@ -15,7 +16,11 @@ const Footer = (): JSX.Element => {
 					icons={{ className: "fill-gray-800" }}
 				/>
 			</div>
-			<Link href="#featured-game" className="mb-[-1.55rem] block self-center">
+			<Link
+				noAnimation
+				href="#featured-game"
+				className="mb-[-1.55rem] block self-center"
+			>
 				<span className="block h-12 w-12 bg-brand-red [clip-path:polygon(50%_0%,0_50%,100%_50%)]"></span>
 			</Link>
 			<section className="bg-gray-800 p-3 text-center font-display text-lg font-normal text-white">

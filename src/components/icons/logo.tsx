@@ -14,7 +14,7 @@ const Logo = ({ variant = "red", ...props }: LogoProps): JSX.Element => {
 	const fill = variantsTable[variant];
 
 	return (
-		<Link href="/">
+		<Link noAnimation href="/">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				xmlSpace="preserve"
