@@ -1,0 +1,121 @@
+---
+import {
+  Factsheet,
+  Footer,
+  Head,
+  Heading,
+  Link,
+  Logo,
+  Section,
+  Seo,
+  SideBar,
+} from "@/components";
+import { pressKit } from "@/data";
+
+const repeatedSections = ["description", "history", "video-policy"] as const;
+---
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <Head generator={Astro.generator}>
+    <Seo title="Press Kit" />
+  </Head>
+
+  <body class="grid grid-cols-12">
+    <SideBar
+      navigationLinks={pressKit.navigation}
+      siteUrl={Astro.site?.toString() ?? ""}
+    />
+
+    <main
+      class="col-start-1 col-end-13 px-10 pt-14 lg:col-start-4 lg:col-end-13 lg:pr-16"
+    >
+      <div class="ml-auto w-fit">
+        <Logo />
+      </div>
+
+      <div class="flex flex-col gap-2 lg:flex-row">
+        <Factsheet factsheet={pressKit.factsheet} />
+
+        <div>
+          {
+            repeatedSections.map((section) => (
+              <Section
+                id={section}
+                noHr
+                className="!mx-0 !mt-0 !items-start !py-14"
+              >
+                <Heading level={2}>{pressKit[section].title}</Heading>
+                <p class="text-justify">{pressKit[section].content}</p>
+              </Section>
+            ))
+          }
+
+          <Section
+            id="projects"
+            noHr
+            className="!mx-0 !mt-0 !items-start !py-14"
+          >
+            <Heading level={2}>{pressKit.projects.title}</Heading>
+
+            <ul>
+              {
+                pressKit.projects.content.map((project) => (
+                  <li class="before:inline-block before:w-4 before:text-gray-800 before:content-['•']">
+                    <Link
+                      href={project.url}
+                      rel="noopener"
+                      target="_blank"
+                      className="text-brand-blue"
+                    >
+                      {project.text}
+                    </Link>
+                  </li>
+                ))
+              }
+            </ul>
+          </Section>
+        </div>
+      </div>
+      <hr class="my-14 w-full border-gray-300" />
+
+      <Section
+        id="videos"
+        className="!mx-0 !mt-0 w-full !items-start !py-14"
+        client:visible
+      >
+        <Heading level={2}>{pressKit.videos.title}</Heading>
+        <div
+          class="grid w-full grid-cols-1 gap-16 md:grid-cols-2 2xl:grid-cols-3"
+        >
+          {
+            pressKit.videos.content.map((video) => (
+              <div>
+                <Heading level={3} className="mb-2 font-sans text-base">
+                  {video.text}
+                </Heading>
+                <div class="relative h-0 pb-[56.25%]">
+                  <iframe
+                    class="absolute inset-0 h-full w-full"
+                    src={video.url}
+                    title={video.text}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  />
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </Section>
+    </main>
+
+    <Footer showLinks={false} />
+    <style is:global>
+      html,
+      body {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </body>
+</html>
