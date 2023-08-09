@@ -32,6 +32,8 @@ const { games } = Astro.props;
 </Section>
 
 <script>
+  import Splide from "@splidejs/splide";
+
   document.addEventListener("DOMContentLoaded", function () {
     new Splide("#games-carousel", {
       type: "loop",
@@ -40,6 +42,8 @@ const { games } = Astro.props;
       autoWidth: true,
       lazyLoad: "nearby",
       gap: "1rem",
+      autoplay: true,
+      interval: 5000,
 
       mediaQuery: "min",
       breakpoints: {

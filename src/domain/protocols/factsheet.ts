@@ -1,14 +1,14 @@
 export interface FactsheetContent {
-	text: string;
-	url?: string;
+  text: string;
+  url?: string;
 }
 
 export interface FactsheetBase {
-	title: string;
-	content: FactsheetContent[];
+  title: string;
+  content: FactsheetContent[];
 }
 
 export type Factsheet = {
-	title: string;
-	content: FactsheetBase[];
+  title: string;
+  content: FactsheetBase[];
 };
