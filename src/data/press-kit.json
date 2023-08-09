@@ -1,0 +1,176 @@
+{
+  "navigation": [
+    {
+      "text": "Informações",
+      "url": "#factsheet"
+    },
+    {
+      "text": "Descrição",
+      "url": "#description"
+    },
+    {
+      "text": "História",
+      "url": "#history"
+    },
+    {
+      "text": "Política de Vídeo",
+      "url": "#video-policy"
+    },
+    {
+      "text": "Projetos",
+      "url": "#projects"
+    },
+    {
+      "text": "Vídeos",
+      "url": "#videos"
+    },
+    {
+      "text": "Imagens",
+      "url": "#images"
+    },
+    {
+      "text": "Logo & Ícones",
+      "url": "#logo-and-icons"
+    },
+    {
+      "text": "Prêmios & Reconhecimento",
+      "url": "#awards-and-recognition"
+    },
+    {
+      "text": "Artigos Selecionados",
+      "url": "#selected-articles"
+    },
+    {
+      "text": "Time",
+      "url": "#team"
+    },
+    {
+      "text": "Contato",
+      "url": "#contact"
+    }
+  ],
+  "factsheet": {
+    "title": "Informações",
+    "content": [
+      {
+        "title": "Desenvolvedor:",
+        "content": [
+          {
+            "text": "TGD Studio"
+          },
+          {
+            "text": "Based in Fortaleza, Brasil"
+          }
+        ]
+      },
+      {
+        "title": "Website:",
+        "content": [
+          {
+            "url": "https://tgdstudio.com.br",
+            "text": "https://tgdstudio.com.br"
+          }
+        ]
+      },
+      {
+        "title": "Contato de Imprensa e Negócios:",
+        "content": [
+          {
+            "text": "contato@tgdstudio.com.br",
+            "url": "mailto:press@beholdstudios.com.br"
+          }
+        ]
+      },
+      {
+        "title": "Social:",
+        "content": [
+          {
+            "text": "@TheGuardianDogS",
+            "url": "https://twitter.com/TheGuardianDogS"
+          },
+          {
+            "text": "facebook.com/tgdgames",
+            "url": "https://www.facebook.com/tgdgames/"
+          }
+        ]
+      },
+      {
+        "title": "Releases:",
+        "content": [
+          {
+            "url": "https://negative-one.itch.io/super-gattai",
+            "text": "Super Gattai"
+          },
+          {
+            "url": "https://tgdstudio.itch.io/call-of-the-racket",
+            "text": "Call of the Racket"
+          }
+        ]
+      },
+      {
+        "title": "Endereço:",
+        "content": [
+          {
+            "text": "Av. Humberto Monte, s/n - Pici"
+          },
+          {
+            "text": "Bloco 1430, sala 7"
+          },
+          {
+            "text": "Fortaleza/CE, Brasil"
+          }
+        ]
+      },
+      {
+        "title": "Telefone:",
+        "content": [
+          {
+            "text": "+55 (61) 3034-3625"
+          }
+        ]
+      }
+    ]
+  },
+  "description": {
+    "title": "Descrição",
+    "content": "A The Guardian Dog Studio ou TGD Studio é uma Empresa Júnior (EJ) de desenvolvimento de jogos, significando que nossas atividades não visam ao lucro, e toda renda gerada a partir de nossos produtos é reinvestida na estrutura e no bem-estar de nossa matilha (forma que chamamos todos os nossos funcionários colaboradores). Temos como missão desenvolver jogos de excelência a preços acessíveis, expandindo o mercado Brasileiro. Não queremos ser os únicos e maiores, queremos servir de norte para toda uma geração de possíveis desenvolvedores, mostrando que é sim possível desenvolver jogos no Brasil como profissão!"
+  },
+  "history": {
+    "title": "História",
+    "content": "Fundada no dia 04/10/2019 (Dia internacional do Cachorro!), o The Guardian Dog Studio ou TGD Studio foi o sonho de um grupo de alunos do curso de Sistemas e Mídias Digitais (SMD) da Universidade Federal do Ceará (UFC) que queriam entrar no mercado de jogos enquanto ainda estavam no processo de formação acadêmica. Para tornar esse sonho realidade, juntos eles decidiram abrir um estúdio indie dentro da própria universidade, e o chamaram de The Guardian Dog Studio."
+  },
+  "video-policy": {
+    "title": "Política de Vídeo",
+    "content": "Você pode criar vídeos de nossos jogos e também monetizá-los, se desejar. Isso inclui vídeos no estilo de Let's Plays, Speed Runs, Avaliações, Tutoriais, Contagens regressivas, Comentários, etc. A The Guardian Dog Studio permite que você crie, publique e poste vídeos, sejam gratuitos ou com anúncios, usando capturas ou transmissões ao vivo de nossos jogos. Você não precisa solicitar permissão por escrito para criar tal conteúdo. Observe que nós reservamos o direito de atualizar esta política sem aviso ou responsabilidade. Se você tiver mais perguntas sobre este tópico ou nossas políticas, entre em contato conosco."
+  },
+  "projects": {
+    "title": "Projetos",
+    "content": [
+      {
+        "url": "https://tgdstudio.itch.io/call-of-the-racket",
+        "text": "Call of the Racket"
+      },
+      {
+        "text": "Super Gattai",
+        "url": "https://negative-one.itch.io/super-gattai"
+      }
+    ]
+  },
+  "videos": {
+    "title": "Vídeos",
+    "content": [
+      {
+        "text": "Super Gattai - Trailer de Lançamento",
+        "url": "https://www.youtube.com/embed/qw2i1EQCnTQ"
+      },
+      {
+        "text": "Super Gattai - Trailer de Lançamento",
+        "url": "https://www.youtube.com/embed/qw2i1EQCnTQ"
+      },
+      {
+        "text": "Super Gattai - Trailer de Lançamento",
+        "url": "https://www.youtube.com/embed/qw2i1EQCnTQ"
+      }
+    ]
+  }
+}
