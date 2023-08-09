@@ -1,6 +1,12 @@
-interface SectionProps extends React.HTMLAttributes<HTMLDivElement> { }
+interface SectionProps extends React.HTMLAttributes<HTMLDivElement> {
+	noHr?: boolean;
+}
 
-const Section = ({ children, ...props }: SectionProps): JSX.Element => {
+const Section = ({
+	children,
+	noHr = false,
+	...props
+}: SectionProps): JSX.Element => {
 	return (
 		<>
 			<section
@@ -9,7 +15,7 @@ const Section = ({ children, ...props }: SectionProps): JSX.Element => {
 			>
 				{children}
 			</section>
-			<hr className="border-gray-400" />
+			{!noHr && <hr className="border-gray-400" />}
 		</>
 	);
 };
