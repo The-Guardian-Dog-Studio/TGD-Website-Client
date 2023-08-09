@@ -1,11 +1,12 @@
 import { Button, Heading, Image, Link, Section } from "@/components";
 import { Tabs } from "@/components/ui";
-import { home } from "@/data";
-import type { AboutProtocol } from "@/domain/protocols/about-protocol";
+import type { AboutProtocol } from "@/domain/protocols";
 
-const aboutData: AboutProtocol = home["about"];
+interface AboutSectionProps {
+	aboutData: AboutProtocol;
+}
 
-const AboutSection = (): JSX.Element => {
+const AboutSection = ({ aboutData }: AboutSectionProps): JSX.Element => {
 	return (
 		<Section id="about" className="gap-16">
 			<Heading level={1}>Sobre Nós</Heading>

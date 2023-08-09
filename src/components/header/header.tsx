@@ -1,8 +1,7 @@
 import { useMediaQuery } from "react-responsive";
 
 import { home } from "@/data";
-import { NavigationLink } from "@/domain/protocols/navigation-link";
-import { SocialMediaPlatform } from "@/domain/protocols/social-media-platform";
+import { NavigationLink, SocialMediaPlatform } from "@/domain/protocols";
 
 import DesktopHeader from "./desktop-header";
 import MobileHeader from "./mobile-header";

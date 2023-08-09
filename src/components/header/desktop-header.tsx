@@ -1,6 +1,5 @@
 import { Link, Logo, SocialMedia } from "@/components";
-import { NavigationLink } from "@/domain/protocols/navigation-link";
-import { SocialMediaPlatform } from "@/domain/protocols/social-media-platform";
+import { NavigationLink, SocialMediaPlatform } from "@/domain/protocols";
 
 interface DesktopHeaderProps {
 	socialMediaPlatforms: SocialMediaPlatform[];

@@ -1,15 +1,15 @@
 import { Image, Link } from "@/components";
-import { home } from "@/data";
-import type { FeaturedGame } from "@/domain/protocols/featured-game";
+import type { FeaturedGame } from "@/domain/protocols";
 import { removeDoubleSlashes } from "@/utils";
 
-const featuredSectionData: FeaturedGame = home["featured-game"];
+interface FeaturedSectionProps {
+	featuredGame: FeaturedGame;
+}
 
-const FeaturedSection = (): JSX.Element => {
-	const backgroundUrl = removeDoubleSlashes(
-		featuredSectionData.bannerUrl,
-		false
-	);
+const FeaturedSection = ({
+	featuredGame,
+}: FeaturedSectionProps): JSX.Element => {
+	const backgroundUrl = removeDoubleSlashes(featuredGame.bannerUrl, false);
 
 	return (
 		<section

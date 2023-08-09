@@ -1,10 +1,11 @@
 import { Heading, Link, Section } from "@/components";
-import { home } from "@/data";
-import { ContactData } from "@/domain/protocols/contact-protocol";
+import { ContactData } from "@/domain/protocols";
 
-const contactData: ContactData = home["contact"];
+interface ContactSectionProps {
+	contactData: ContactData;
+}
 
-const ContactSection = (): JSX.Element => {
+const ContactSection = ({ contactData }: ContactSectionProps): JSX.Element => {
 	return (
 		<Section id="contact" className="gap-16">
 			<Heading level={1}>Contato</Heading>

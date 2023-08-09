@@ -1,6 +1,6 @@
 import { useMediaQuery } from "react-responsive";
 
-import { NavigationLink } from "@/domain/protocols/navigation-link";
+import { NavigationLink } from "@/domain/protocols";
 
 import { Heading, Link } from ".";
 

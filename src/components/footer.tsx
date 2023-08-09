@@ -1,5 +1,5 @@
 import { home } from "@/data";
-import { SocialMediaPlatform } from "@/domain/protocols/social-media-platform";
+import { SocialMediaPlatform } from "@/domain/protocols";
 
 import { Link, Logo, SocialMedia } from ".";
 

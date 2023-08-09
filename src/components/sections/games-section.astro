@@ -1,10 +1,13 @@
 ---
 /* eslint-disable tailwindcss/no-custom-classname */
 import { Game as GameComponent, Heading, Section } from "@/components";
-import { home } from "@/data";
-import { Game } from "@/domain/protocols/game";
+import { Game } from "@/domain/protocols";
 
-const games: Game[] = home["games"];
+interface Props {
+  games: Game[];
+}
+
+const { games } = Astro.props;
 ---
 
 <Section id="games">

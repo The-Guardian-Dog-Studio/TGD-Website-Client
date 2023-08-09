@@ -1,7 +1,7 @@
 import { Menu } from "@headlessui/react";
 
 import { Heading, Link } from "@/components";
-import { NavigationLink } from "@/domain/protocols/navigation-link";
+import { NavigationLink } from "@/domain/protocols";
 
 import { links } from "./tailwind-classes";
 

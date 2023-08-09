@@ -1,7 +1,7 @@
 import { Menu } from "@headlessui/react";
 
 import { GetIcon, Heading, Link } from "@/components";
-import { SocialMediaPlatform } from "@/domain/protocols/social-media-platform";
+import { SocialMediaPlatform } from "@/domain/protocols";
 
 import { icons, links } from "./tailwind-classes";
 

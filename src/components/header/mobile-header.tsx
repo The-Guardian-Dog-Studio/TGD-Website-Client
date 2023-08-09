@@ -1,7 +1,6 @@
 import { Menu as MenuLib } from "@headlessui/react";
 
-import { NavigationLink } from "@/domain/protocols/navigation-link";
-import { SocialMediaPlatform } from "@/domain/protocols/social-media-platform";
+import { NavigationLink, SocialMediaPlatform } from "@/domain/protocols";
 
 import { Logo } from "..";
 import * as Menu from "./menu";

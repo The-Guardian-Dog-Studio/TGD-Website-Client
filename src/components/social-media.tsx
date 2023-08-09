@@ -1,6 +1,6 @@
 import { Link } from "@/components";
 import { GetIcon } from "@/components/icons";
-import type { SocialMediaPlatform } from "@/domain/protocols/social-media-platform";
+import type { SocialMediaPlatform } from "@/domain/protocols";
 
 interface SocialMediaProps {
 	className?: string;
