@@ -1,11 +1,13 @@
 export { default as Button } from "./button";
 export { default as Footer } from "./footer";
 export { default as Game } from "./game";
+export { default as Head } from "./head";
 export * from "./header";
 export { default as Heading } from "./heading";
 export * from "./icons";
 export { default as Image } from "./image";
 export { default as Link } from "./link";
 export * from "./sections";
+export { default as Seo } from "./seo";
 export { default as SideBar } from "./side-bar";
 export { default as SocialMedia } from "./social-media";
