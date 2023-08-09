@@ -5,17 +5,23 @@ import { Link, Logo, SocialMedia } from ".";
 
 const socialMediaPlatforms: SocialMediaPlatform[] = home["social-media"];
 
-const Footer = (): JSX.Element => {
-	return (
-		<footer className="flex flex-col">
-			<div className="flex flex-col items-center justify-center gap-8 p-8 md:flex-row md:gap-36">
-				<Logo variant="gray" />
+interface FooterProps {
+	showLinks?: boolean;
+}
 
-				<SocialMedia
-					platforms={socialMediaPlatforms}
-					icons={{ className: "fill-gray-800" }}
-				/>
-			</div>
+const Footer = ({ showLinks = true }: FooterProps): JSX.Element => {
+	return (
+		<footer className="col-start-1 col-end-13 row-start-2 row-end-3 flex flex-col">
+			{showLinks && (
+				<div className="flex flex-col items-center justify-center gap-8 p-8 md:flex-row md:gap-36">
+					<Logo variant="gray" />
+
+					<SocialMedia
+						platforms={socialMediaPlatforms}
+						icons={{ className: "fill-gray-800" }}
+					/>
+				</div>
+			)}
 			<Link
 				noAnimation
 				href="#featured-game"
