@@ -7,4 +7,5 @@ export * from "./icons";
 export { default as Image } from "./image";
 export { default as Link } from "./link";
 export * from "./sections";
+export { default as SideBar } from "./side-bar";
 export { default as SocialMedia } from "./social-media";
