@@ -1,9 +1,9 @@
 import { Image, Link } from "@/components";
-import siteData from "@/data.json";
+import { home } from "@/data";
 import type { FeaturedGame } from "@/domain/protocols/featured-game";
 import { removeDoubleSlashes } from "@/utils";
 
-const featuredSectionData: FeaturedGame = siteData["featured-game"];
+const featuredSectionData: FeaturedGame = home["featured-game"];
 
 const FeaturedSection = (): JSX.Element => {
 	const backgroundUrl = removeDoubleSlashes(

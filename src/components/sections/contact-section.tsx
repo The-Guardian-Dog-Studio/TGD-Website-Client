@@ -1,8 +1,8 @@
 import { Heading, Link, Section } from "@/components";
-import data from "@/data.json";
+import { home } from "@/data";
 import { ContactData } from "@/domain/protocols/contact-protocol";
 
-const contactData: ContactData = data["contact"];
+const contactData: ContactData = home["contact"];
 
 const ContactSection = (): JSX.Element => {
 	return (

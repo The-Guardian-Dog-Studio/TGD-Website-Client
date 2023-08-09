@@ -1,9 +1,9 @@
-import data from "@/data.json";
+import { home } from "@/data";
 import { SocialMediaPlatform } from "@/domain/protocols/social-media-platform";
 
 import { Link, Logo, SocialMedia } from ".";
 
-const socialMediaPlatforms: SocialMediaPlatform[] = data["social-media"];
+const socialMediaPlatforms: SocialMediaPlatform[] = home["social-media"];
 
 const Footer = (): JSX.Element => {
 	return (

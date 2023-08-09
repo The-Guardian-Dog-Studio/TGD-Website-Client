@@ -1,9 +1,9 @@
 import { Button, Heading, Image, Link, Section } from "@/components";
 import { Tabs } from "@/components/ui";
-import data from "@/data.json";
+import { home } from "@/data";
 import type { AboutProtocol } from "@/domain/protocols/about-protocol";
 
-const aboutData: AboutProtocol = data["about"];
+const aboutData: AboutProtocol = home["about"];
 
 const AboutSection = (): JSX.Element => {
 	return (

@@ -1,14 +1,13 @@
 ---
-import { Game as GameComponent, Heading, Section } from '@/components';
-import siteData from '@/data.json';
-import { Game } from '@/domain/protocols/game';
+/* eslint-disable tailwindcss/no-custom-classname */
+import { Game as GameComponent, Heading, Section } from "@/components";
+import { home } from "@/data";
+import { Game } from "@/domain/protocols/game";
 
-const games: Game[] = siteData["games"];
+const games: Game[] = home["games"];
 ---
 
-<Section
-  id="games"
->
+<Section id="games">
   <Heading level={1}>Jogos</Heading>
   <section
     id="games-carousel"
@@ -32,46 +31,46 @@ const games: Game[] = siteData["games"];
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     new Splide("#games-carousel", {
-			type: "loop",
-			width: "1280px",
-			focus: "center",
-			autoWidth: true,
-			lazyLoad: 'nearby' ,
-			gap: "1rem", 
+      type: "loop",
+      width: "1280px",
+      focus: "center",
+      autoWidth: true,
+      lazyLoad: "nearby",
+      gap: "1rem",
 
-			mediaQuery: "min",
-			breakpoints: {
-				0: {
-					perPage: 1,
-					perMove: 1,
-				},
-				700: {
-					perPage: 2,
-					perMove: 1,
-				},
-				1440: {
-					perPage: 3,
-					perMove: 2,
-				},
-				2560: {
-					perPage: 4,
-					perMove: 3,
-				}
-			},
+      mediaQuery: "min",
+      breakpoints: {
+        0: {
+          perPage: 1,
+          perMove: 1,
+        },
+        700: {
+          perPage: 2,
+          perMove: 1,
+        },
+        1440: {
+          perPage: 3,
+          perMove: 2,
+        },
+        2560: {
+          perPage: 4,
+          perMove: 3,
+        },
+      },
 
+      classes: {
+        arrows: "splide__arrows bg-white",
+        arrow:
+          "items-center cursor-pointer flex h-[2em] justify-center opacity-70 absolute -translate-y-2/4 w-[2em] z-[1] p-0 rounded-[50%] border-0 top-2/4 fill-brand-red",
 
-			classes: {
-				arrows: 'splide__arrows bg-white',
-				arrow : 'items-center cursor-pointer flex h-[2em] justify-center opacity-70 absolute -translate-y-2/4 w-[2em] z-[1] p-0 rounded-[50%] border-0 top-2/4 fill-brand-red',
-
-				page  : 'splide__pagination__page__custom bg-gray-900 h-4 w-4 inline-block opacity-70 relative transition-transform duration-[0.2s] ease-linear m-[3px] p-0 rounded-[50%] border-0',
-			},
+        page: "splide__pagination__page__custom bg-gray-900 h-4 w-4 inline-block opacity-70 relative transition-transform duration-[0.2s] ease-linear m-[3px] p-0 rounded-[50%] border-0",
+      },
     }).mount();
   });
 </script>
 
 <style is:global>
-	button.splide__pagination__page__custom.is-active{
-		@apply bg-brand-red opacity-100 scale-125;
-	}
+  button.splide__pagination__page__custom.is-active {
+    @apply bg-brand-red opacity-100 scale-125;
+  }
 </style>
