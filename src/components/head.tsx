@@ -17,7 +17,10 @@ const Head = ({ children, generator }: HeadProps): JSX.Element => {
       />
       <meta name="generator" content={generator} />
 
-      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+      <script
+        async
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+      ></script>
       <link
         href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
         rel="stylesheet"

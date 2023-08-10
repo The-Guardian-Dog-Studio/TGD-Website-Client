@@ -1,4 +1,4 @@
-interface SectionProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface SectionProps extends React.HTMLAttributes<HTMLDivElement> {
   noHr?: boolean;
 }
 
