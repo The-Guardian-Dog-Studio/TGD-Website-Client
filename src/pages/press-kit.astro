@@ -108,6 +108,50 @@ const repeatedSections = ["description", "history", "video-policy"] as const;
           }
         </div>
       </Section>
+
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <Section
+          id="team"
+          className="!mx-0 !mt-0 w-full !items-start !py-14"
+          noHr
+        >
+          <Heading level={2}>{pressKit.team.title}</Heading>
+          {
+            pressKit.team.content.map((person) => (
+              <div>
+                <Heading level={3} className="font-sans">
+                  {person.name}
+                </Heading>
+                <p>{person.role}</p>
+              </div>
+            ))
+          }
+        </Section>
+        <Section
+          id="contact"
+          className="!mx-0 !mt-0 w-full !items-start !py-14"
+          noHr
+        >
+          <Heading level={2}>{pressKit.contact.title}</Heading>
+          {
+            pressKit.contact.content.map((contact) => (
+              <div>
+                <Heading level={3} className="font-sans">
+                  {contact.name}
+                </Heading>
+                <Link
+                  href={contact.url}
+                  rel="noopener"
+                  target="_blank"
+                  className="text-brand-blue"
+                >
+                  {contact.text}
+                </Link>
+              </div>
+            ))
+          }
+        </Section>
+      </div>
     </main>
 
     <Footer showLinks={false} />

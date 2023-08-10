@@ -41,7 +41,7 @@
       "url": "#selected-articles"
     },
     {
-      "text": "Time",
+      "text": "Equipe",
       "url": "#team"
     },
     {
@@ -170,6 +170,43 @@
       {
         "text": "Super Gattai - Trailer de Lançamento",
         "url": "https://www.youtube.com/embed/qw2i1EQCnTQ"
+      }
+    ]
+  },
+  "team": {
+    "title": "Equipe",
+    "content": [
+      {
+        "name": "Saulo Camarotti",
+        "role": "Fundador, Produtor e Desenvolvedor"
+      },
+      {
+        "name": "Guilherme Mazzano",
+        "role": "Game Designer"
+      },
+      {
+        "name": "Leonardo Prunk",
+        "role": "Desenvolvedor"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contato",
+    "content": [
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/tgdgames/",
+        "text": "https://www.facebook.com/tgdgames/"
+      },
+      {
+        "name": "Twitter",
+        "url": "https://twitter.com/TheGuardianDogS",
+        "text": "https://twitter.com/TheGuardianDogS"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/tgdgames/",
+        "text": "https://www.instagram.com/tgdgames/"
       }
     ]
   }
