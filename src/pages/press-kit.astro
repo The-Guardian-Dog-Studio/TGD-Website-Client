@@ -3,16 +3,29 @@ import {
   Factsheet,
   Footer,
   Head,
-  Heading,
+  Iframe,
+  Image,
   Link,
   Logo,
-  Section,
+  PressKitSection,
   Seo,
   SideBar,
 } from "@/components";
 import { pressKit } from "@/data";
 
 const repeatedSections = ["description", "history", "video-policy"] as const;
+const {
+  navigation,
+  factsheet,
+  projects,
+  videos,
+  images,
+  logos,
+  "awards-and-recognition": awards,
+  "selected-articles": articles,
+  team,
+  contact,
+} = pressKit;
 ---
 
 <!DOCTYPE html>
@@ -23,7 +36,7 @@ const repeatedSections = ["description", "history", "video-policy"] as const;
 
   <body class="grid grid-cols-12">
     <SideBar
-      navigationLinks={pressKit.navigation}
+      navigationLinks={navigation}
       siteUrl={Astro.site?.toString() ?? ""}
     />
 
@@ -35,32 +48,25 @@ const repeatedSections = ["description", "history", "video-policy"] as const;
       </div>
 
       <div class="flex flex-col gap-2 lg:flex-row">
-        <Factsheet factsheet={pressKit.factsheet} />
+        <Factsheet factsheet={factsheet} />
 
         <div>
           {
             repeatedSections.map((section) => (
-              <Section
+              <PressKitSection
                 id={section}
                 noHr
-                className="!mx-0 !mt-0 !items-start !py-14"
+                title={pressKit[section].title}
               >
-                <Heading level={2}>{pressKit[section].title}</Heading>
                 <p class="text-justify">{pressKit[section].content}</p>
-              </Section>
+              </PressKitSection>
             ))
           }
 
-          <Section
-            id="projects"
-            noHr
-            className="!mx-0 !mt-0 !items-start !py-14"
-          >
-            <Heading level={2}>{pressKit.projects.title}</Heading>
-
+          <PressKitSection title={projects.title} id="projects" noHr>
             <ul>
               {
-                pressKit.projects.content.map((project) => (
+                projects.content.map((project) => (
                   <li class="before:inline-block before:w-4 before:text-gray-800 before:content-['•']">
                     <Link
                       href={project.url}
@@ -74,71 +80,133 @@ const repeatedSections = ["description", "history", "video-policy"] as const;
                 ))
               }
             </ul>
-          </Section>
+          </PressKitSection>
         </div>
       </div>
-      <hr class="my-14 w-full border-gray-300" />
+      <hr class="w-full border-gray-300" />
 
-      <Section
-        id="videos"
-        className="!mx-0 !mt-0 w-full !items-start !py-14"
-        client:visible
-      >
-        <Heading level={2}>{pressKit.videos.title}</Heading>
+      <PressKitSection id="videos" client:visible title={videos.title}>
         <div
           class="grid w-full grid-cols-1 gap-16 md:grid-cols-2 2xl:grid-cols-3"
         >
           {
-            pressKit.videos.content.map((video) => (
-              <div>
-                <Heading level={3} className="mb-2 font-sans text-base">
-                  {video.text}
-                </Heading>
-                <div class="relative h-0 pb-[56.25%]">
-                  <iframe
-                    class="absolute inset-0 h-full w-full"
-                    src={video.url}
-                    title={video.text}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                  />
-                </div>
-              </div>
+            videos.content.map((video) => (
+              <PressKitSection.Content
+                className="mb-2 font-sans text-base"
+                title={video.text}
+              >
+                <Iframe title={video.text} src={video.url} />
+              </PressKitSection.Content>
             ))
           }
         </div>
-      </Section>
+      </PressKitSection>
 
-      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <Section
-          id="team"
-          className="!mx-0 !mt-0 w-full !items-start !py-14"
-          noHr
+      <PressKitSection
+        id="images"
+        client:visible
+        title={images.title}
+        className="gap-4"
+      >
+        <Link
+          noPrefix
+          download
+          href={images["zip-download"].url}
+          className="text-brand-blue"
         >
-          <Heading level={2}>{pressKit.team.title}</Heading>
+          {images["zip-download"].text}
+        </Link>
+        <div
+          class="grid w-full grid-cols-1 gap-16 md:grid-cols-2 2xl:grid-cols-3"
+        >
           {
-            pressKit.team.content.map((person) => (
-              <div>
-                <Heading level={3} className="font-sans">
-                  {person.name}
-                </Heading>
-                <p>{person.role}</p>
-              </div>
+            images.content.map((image) => (
+              <Image src={image.url} alt={image.alt} />
             ))
           }
-        </Section>
-        <Section
-          id="contact"
-          className="!mx-0 !mt-0 w-full !items-start !py-14"
-          noHr
+        </div>
+      </PressKitSection>
+
+      <PressKitSection
+        id="logo-and-icons"
+        client:visible
+        title={logos.title}
+        className="gap-4"
+      >
+        <Link
+          noPrefix
+          download
+          href={logos["zip-download"].url}
+          className="text-brand-blue"
         >
-          <Heading level={2}>{pressKit.contact.title}</Heading>
+          {logos["zip-download"].text}
+        </Link>
+        <div
+          class="grid w-full grid-cols-1 gap-16 md:grid-cols-2 2xl:grid-cols-3"
+        >
           {
-            pressKit.contact.content.map((contact) => (
-              <div>
-                <Heading level={3} className="font-sans">
-                  {contact.name}
-                </Heading>
+            logos.content.map((image) => (
+              <Image src={image.url} alt={image.alt} />
+            ))
+          }
+        </div>
+      </PressKitSection>
+
+      <PressKitSection id="awards-and-recognition" title={awards.title}>
+        <ul>
+          {
+            awards.content.map((award) => (
+              <li class="ml-4 md:ml-8">
+                <blockquote>
+                  <p>{award}</p>
+                </blockquote>
+              </li>
+            ))
+          }
+        </ul>
+      </PressKitSection>
+
+      <PressKitSection id="selected-articles" title={articles.title}>
+        <ul>
+          {
+            articles.content.map((article) => (
+              <li class="mb-2 ml-4 md:ml-8">
+                <blockquote>
+                  <p>{article.text}</p>
+                  <footer>
+                    {`- ${article.author}, `}
+                    <cite>
+                      <Link
+                        noPrefix
+                        href={article.cite.url}
+                        className="text-brand-blue"
+                      >
+                        {article.cite.text}
+                      </Link>
+                    </cite>
+                  </footer>
+                </blockquote>
+              </li>
+            ))
+          }
+        </ul>
+      </PressKitSection>
+
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <PressKitSection id="team" noHr title={team.title}>
+          {
+            team.content.map((person) => (
+              <PressKitSection.Content title={person.name}>
+                <p>{person.role}</p>
+              </PressKitSection.Content>
+            ))
+          }
+        </PressKitSection>
+
+        <PressKitSection id="contact" noHr title={contact.title}>
+          {
+            contact.content.map((contact) => (
+              <PressKitSection.Content title={contact.name}>
                 <Link
                   href={contact.url}
                   rel="noopener"
@@ -147,10 +215,10 @@ const repeatedSections = ["description", "history", "video-policy"] as const;
                 >
                   {contact.text}
                 </Link>
-              </div>
+              </PressKitSection.Content>
             ))
           }
-        </Section>
+        </PressKitSection>
       </div>
     </main>
 
