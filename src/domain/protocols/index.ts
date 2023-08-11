@@ -3,5 +3,7 @@ export * from "./contact-protocol";
 export * from "./factsheet";
 export * from "./featured-game";
 export * from "./game";
+export * from "./image";
+export * from "./link";
 export * from "./navigation-link";
 export * from "./social-media-platform";

@@ -1,16 +1,12 @@
+import { Image, Link } from "@/domain/protocols";
+
 export interface Tab {
   title: string;
   content: string;
-  link?: {
-    url: string;
-    text: string;
-  };
+  link?: Link;
 }
 
 export interface AboutProtocol {
-  banner: {
-    url: string;
-    alt: string;
-  };
+  banner: Image;
   tabs: Tab[];
 }
