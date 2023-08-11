@@ -2,6 +2,7 @@ export { default as Button } from "./button";
 export { default as Game } from "./game";
 export { default as Heading } from "./heading";
 export * from "./icons";
+export { default as Iframe } from "./iframe";
 export { default as Image } from "./image";
 export * from "./layout";
 export { Link } from "./link";

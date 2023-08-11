@@ -1,21 +1,25 @@
 ---
 import {
+  ArticlesSection,
+  AwardsSection,
   Factsheet,
   Footer,
   Head,
-  Iframe,
-  Image,
+  ImagesSection,
   Link,
   Logo,
   PressKitNavigation,
   PressKitSection,
+  ProjectsSection,
   Seo,
+  TeamSection,
+  VideosSection,
 } from "@/components";
 import { pressKit } from "@/data";
 
 const repeatedSections = ["description", "history", "video-policy"] as const;
 const {
-	"navigation-title": navigationTitle,
+  "navigation-title": navigationTitle,
   navigation,
   factsheet,
   projects,
@@ -39,14 +43,14 @@ const {
     <PressKitNavigation
       navigationLinks={navigation}
       siteUrl={Astro.site?.toString() ?? ""}
-			title={navigationTitle}
+      title={navigationTitle}
       client:only="react"
     />
 
     <main
       class="col-start-1 col-end-13 px-10 pt-14 lg:col-start-4 lg:col-end-13 lg:pr-16"
     >
-      <div class="ml-auto w-fit hidden invisible lg:block lg:visible" >
+      <div class="invisible ml-auto hidden w-fit lg:visible lg:block">
         <Logo />
       </div>
 
@@ -66,158 +70,44 @@ const {
             ))
           }
 
-          <PressKitSection title={projects.title} id="projects" noHr>
-            <ul>
-              {
-                projects.content.map((project) => (
-                  <li class="before:inline-block before:w-4 before:text-gray-800 before:content-['•']">
-                    <Link
-                      href={project.url}
-                      rel="noopener"
-                      target="_blank"
-                      className="text-brand-blue"
-                    >
-                      {project.text}
-                    </Link>
-                  </li>
-                ))
-              }
-            </ul>
-          </PressKitSection>
+          <ProjectsSection title={projects.title} content={projects.content} />
         </div>
       </div>
       <hr class="w-full border-gray-300" />
 
-      <PressKitSection id="videos" client:visible title={videos.title}>
-        <div
-          class="grid w-full grid-cols-1 gap-16 md:grid-cols-2 2xl:grid-cols-3"
-        >
-          {
-            videos.content.map((video) => (
-              <PressKitSection.Content
-                className="mb-2 font-sans text-base"
-                title={video.text}
-              >
-                <Iframe title={video.text} src={video.url} />
-              </PressKitSection.Content>
-            ))
-          }
-        </div>
-      </PressKitSection>
-
-      <PressKitSection
+      <VideosSection
+        title={videos.title}
+        content={videos.content}
+        client:visible
+        lazy
+      />
+      <ImagesSection
         id="images"
-        client:visible
         title={images.title}
-        className="gap-4"
-      >
-        <Link
-          noPrefix
-          download
-          href={images["zip-download"].url}
-          className="text-brand-blue"
-        >
-          {images["zip-download"].text}
-        </Link>
-        <div
-          class="grid w-full grid-cols-1 gap-16 md:grid-cols-2 2xl:grid-cols-3"
-        >
-          {
-            images.content.map((image) => (
-              <Image src={image.url} alt={image.alt} />
-            ))
-          }
-        </div>
-      </PressKitSection>
-
-      <PressKitSection
-        id="logo-and-icons"
+        zipDownload={images["zip-download"]}
+        content={images.content}
         client:visible
+        lazy
+      />
+      <ImagesSection
+        id="logo-and-icons"
         title={logos.title}
-        className="gap-4"
-      >
-        <Link
-          noPrefix
-          download
-          href={logos["zip-download"].url}
-          className="text-brand-blue"
-        >
-          {logos["zip-download"].text}
-        </Link>
-        <div
-          class="grid w-full grid-cols-1 gap-16 md:grid-cols-2 2xl:grid-cols-3"
-        >
-          {
-            logos.content.map((image) => (
-              <Image src={image.url} alt={image.alt} />
-            ))
-          }
-        </div>
-      </PressKitSection>
-
-      <PressKitSection id="awards-and-recognition" title={awards.title}>
-        <ul>
-          {
-            awards.content.map((award) => (
-              <li class="ml-4 md:ml-8">
-                <blockquote>
-                  <p>{award}</p>
-                </blockquote>
-              </li>
-            ))
-          }
-        </ul>
-      </PressKitSection>
-
-      <PressKitSection id="selected-articles" title={articles.title}>
-        <ul>
-          {
-            articles.content.map((article) => (
-              <li class="mb-2 ml-4 md:ml-8">
-                <blockquote>
-                  <p>{article.text}</p>
-                  <footer>
-                    {`- ${article.author}, `}
-                    <cite>
-                      <Link
-                        noPrefix
-                        href={article.cite.url}
-                        className="text-brand-blue"
-                      >
-                        {article.cite.text}
-                      </Link>
-                    </cite>
-                  </footer>
-                </blockquote>
-              </li>
-            ))
-          }
-        </ul>
-      </PressKitSection>
+        zipDownload={logos["zip-download"]}
+        content={logos.content}
+        client:visible
+        lazy
+      />
+      <AwardsSection title={awards.title} content={awards.content} />
+      <ArticlesSection title={articles.title} content={articles.content} />
 
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <PressKitSection id="team" noHr title={team.title}>
-          {
-            team.content.map((person) => (
-              <PressKitSection.Content title={person.name}>
-                <p>{person.role}</p>
-              </PressKitSection.Content>
-            ))
-          }
-        </PressKitSection>
+        <TeamSection title={team.title} content={team.content} />
 
         <PressKitSection id="contact" noHr title={contact.title}>
           {
             contact.content.map((contact) => (
               <PressKitSection.Content title={contact.name}>
-                <Link
-                  href={contact.url}
-                  rel="noopener"
-                  target="_blank"
-                  className="text-brand-blue"
-                >
-                  {contact.text}
-                </Link>
+                <Link.Blank href={contact.url}>{contact.text}</Link.Blank>
               </PressKitSection.Content>
             ))
           }

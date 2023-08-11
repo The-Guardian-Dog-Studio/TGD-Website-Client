@@ -1,10 +1,14 @@
 export interface SectionProps extends React.HTMLAttributes<HTMLDivElement> {
   noHr?: boolean;
+  hr?: {
+    className?: string;
+  };
 }
 
 const Section = ({
   children,
   noHr = false,
+  hr,
   ...props
 }: SectionProps): JSX.Element => {
   return (
@@ -15,7 +19,7 @@ const Section = ({
       >
         {children}
       </section>
-      {!noHr && <hr className="border-gray-400" />}
+      {!noHr && <hr className={`border-gray-400 ${hr?.className}`} />}
     </>
   );
 };
