@@ -14,19 +14,13 @@ const navigationLinks: {
   links: NavigationLink[];
 } = home["navigation"];
 
-interface HeaderProps {
-  children?: React.ReactNode;
-}
-
-const Header = ({ children }: HeaderProps): JSX.Element => {
+const Header = (): JSX.Element => {
   const isDestopDevice = useMediaQuery({ minWidth: 768 });
 
   return (
-    <header className="sticky top-0 z-50 h-20 w-full bg-white py-4 shadow-xl shadow-black/20">
+    <header className="sticky top-0 z-50 col-start-1 col-end-13 h-20 w-full bg-white py-4 shadow-xl shadow-black/20">
       <div className="m-auto flex w-11/12 max-w-screen-xl items-center justify-between">
-        {children !== undefined ? (
-          children
-        ) : isDestopDevice ? (
+        {isDestopDevice ? (
           <DesktopHeader
             navigationLinks={navigationLinks.links}
             socialMediaPlatforms={socialMediaPlatforms}

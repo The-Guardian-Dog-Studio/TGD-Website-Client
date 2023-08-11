@@ -7,14 +7,15 @@ import {
   Image,
   Link,
   Logo,
+  PressKitNavigation,
   PressKitSection,
   Seo,
-  SideBar,
 } from "@/components";
 import { pressKit } from "@/data";
 
 const repeatedSections = ["description", "history", "video-policy"] as const;
 const {
+	"navigation-title": navigationTitle,
   navigation,
   factsheet,
   projects,
@@ -35,15 +36,17 @@ const {
   </Head>
 
   <body class="grid grid-cols-12">
-    <SideBar
+    <PressKitNavigation
       navigationLinks={navigation}
       siteUrl={Astro.site?.toString() ?? ""}
+			title={navigationTitle}
+      client:only="react"
     />
 
     <main
       class="col-start-1 col-end-13 px-10 pt-14 lg:col-start-4 lg:col-end-13 lg:pr-16"
     >
-      <div class="ml-auto w-fit">
+      <div class="ml-auto w-fit hidden invisible lg:block lg:visible" >
         <Logo />
       </div>
 
