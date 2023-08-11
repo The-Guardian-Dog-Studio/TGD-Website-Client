@@ -1,11 +1,13 @@
 import { removeDoubleSlashes } from "@/utils";
 
+import { Download, DownloadLinkProps, LinkBlank, LinkBlankProps } from ".";
+
 interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   noPrefix?: boolean;
   noAnimation?: boolean;
 }
 
-const Link = ({
+const DefaultLink = ({
   children,
   noPrefix,
   noAnimation,
@@ -21,4 +23,7 @@ const Link = ({
   );
 };
 
-export default Link;
+DefaultLink.Download = (props: DownloadLinkProps) => Download(props);
+DefaultLink.Blank = (props: LinkBlankProps) => LinkBlank(props);
+
+export default DefaultLink;

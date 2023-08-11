@@ -4,6 +4,6 @@ export { default as Heading } from "./heading";
 export * from "./icons";
 export { default as Image } from "./image";
 export * from "./layout";
-export { default as Link } from "./link";
+export { Link } from "./link";
 export * from "./sections";
 export { default as SocialMedia } from "./social-media";
