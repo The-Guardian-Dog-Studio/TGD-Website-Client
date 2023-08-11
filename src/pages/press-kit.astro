@@ -1,0 +1,126 @@
+---
+import {
+  ArticlesSection,
+  AwardsSection,
+  Factsheet,
+  Footer,
+  Head,
+  ImagesSection,
+  Link,
+  Logo,
+  PressKitNavigation,
+  PressKitSection,
+  ProjectsSection,
+  Seo,
+  TeamSection,
+  VideosSection,
+} from "@/components";
+import { pressKit } from "@/data";
+
+const repeatedSections = ["description", "history", "video-policy"] as const;
+const {
+  "navigation-title": navigationTitle,
+  navigation,
+  factsheet,
+  projects,
+  videos,
+  images,
+  logos,
+  "awards-and-recognition": awards,
+  "selected-articles": articles,
+  team,
+  contact,
+} = pressKit;
+---
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <Head generator={Astro.generator}>
+    <Seo title="Press Kit" />
+  </Head>
+
+  <body class="grid grid-cols-12">
+    <PressKitNavigation
+      navigationLinks={navigation}
+      siteUrl={Astro.site?.toString() ?? ""}
+      title={navigationTitle}
+      client:only="react"
+    />
+
+    <main
+      class="col-start-1 col-end-13 px-10 pt-14 lg:col-start-4 lg:col-end-13 lg:pr-16"
+    >
+      <div class="invisible ml-auto hidden w-fit lg:visible lg:block">
+        <Logo />
+      </div>
+
+      <div class="flex flex-col gap-2 lg:flex-row">
+        <Factsheet factsheet={factsheet} />
+
+        <div>
+          {
+            repeatedSections.map((section) => (
+              <PressKitSection
+                id={section}
+                noHr
+                title={pressKit[section].title}
+              >
+                <p class="text-justify">{pressKit[section].content}</p>
+              </PressKitSection>
+            ))
+          }
+
+          <ProjectsSection title={projects.title} content={projects.content} />
+        </div>
+      </div>
+      <hr class="w-full border-gray-300" />
+
+      <VideosSection
+        title={videos.title}
+        content={videos.content}
+        client:visible
+        lazy
+      />
+      <ImagesSection
+        id="images"
+        title={images.title}
+        zipDownload={images["zip-download"]}
+        content={images.content}
+        client:visible
+        lazy
+      />
+      <ImagesSection
+        id="logo-and-icons"
+        title={logos.title}
+        zipDownload={logos["zip-download"]}
+        content={logos.content}
+        client:visible
+        lazy
+      />
+      <AwardsSection title={awards.title} content={awards.content} />
+      <ArticlesSection title={articles.title} content={articles.content} />
+
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <TeamSection title={team.title} content={team.content} />
+
+        <PressKitSection id="contact" noHr title={contact.title}>
+          {
+            contact.content.map((contact) => (
+              <PressKitSection.Content title={contact.name}>
+                <Link.Blank href={contact.url}>{contact.text}</Link.Blank>
+              </PressKitSection.Content>
+            ))
+          }
+        </PressKitSection>
+      </div>
+    </main>
+
+    <Footer showLinks={false} />
+    <style is:global>
+      html,
+      body {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </body>
+</html>

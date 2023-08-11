@@ -1,4 +1,13 @@
 export { default as AboutSection } from "./about-section";
+export { default as ArticlesSection } from "./articles-section";
+export { default as AwardsSection } from "./awards-section";
 export { default as ContactSection } from "./contact-section";
+export { default as Factsheet } from "./factsheet";
 export { default as FeaturedSection } from "./featured-section";
+export { default as ImagesSection } from "./images-section";
+export { default as PressKitSection } from "./press-kit-section";
+export { default as ProjectsSection } from "./projects-section";
 export { default as Section } from "./section";
+export * from "./section";
+export { default as TeamSection } from "./team-section";
+export { default as VideosSection } from "./videos-section";
