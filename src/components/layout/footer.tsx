@@ -1,7 +1,6 @@
+import { Link, Logo, SocialMedia } from "@/components";
 import { home } from "@/data";
 import { SocialMediaPlatform } from "@/domain/protocols";
-
-import { Link, Logo, SocialMedia } from ".";
 
 const socialMediaPlatforms: SocialMediaPlatform[] = home["social-media"];
 

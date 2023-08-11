@@ -1,25 +1,25 @@
-import { Menu } from "@headlessui/react";
+import { Menu as MenuLib } from "@headlessui/react";
 
-import { GetIcon, Heading, Link } from "@/components";
+import { GetIcon, Link } from "@/components";
+import { MenuDropDown as Menu } from "@/components/layout/header";
 import { SocialMediaPlatform } from "@/domain/protocols";
 
 import { icons, links } from "./tailwind-classes";
 
 interface SocialMedia {
+  title: string;
   socialMediaPlatforms: SocialMediaPlatform[];
 }
 
 const SocialMediaLinks = ({
+  title,
   socialMediaPlatforms,
 }: SocialMedia): JSX.Element => {
   return (
-    <>
-      <Heading level={4} className="ml-4 mt-2 text-base">
-        Redes Sociais
-      </Heading>
+    <Menu.Item title={title} className="ml-4 mt-2 text-base">
       {socialMediaPlatforms.map((platform) => (
         <div className="p-1" key={platform.name}>
-          <Menu.Item>
+          <MenuLib.Item>
             {({ active }) => (
               <Link
                 noPrefix
@@ -27,7 +27,7 @@ const SocialMediaLinks = ({
                 href={platform.url}
                 className={`${links(
                   active
-                )} group flex w-full items-center gap-4 rounded-md p-2 text-sm font-semibold`}
+                )} group flex w-full items-center gap-4 rounded-md p-2 text-sm font-semibold transition-all`}
               >
                 <GetIcon
                   name={platform.icon}
@@ -36,10 +36,10 @@ const SocialMediaLinks = ({
                 {platform.name}
               </Link>
             )}
-          </Menu.Item>
+          </MenuLib.Item>
         </div>
       ))}
-    </>
+    </Menu.Item>
   );
 };
 

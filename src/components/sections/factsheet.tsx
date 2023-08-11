@@ -1,11 +1,9 @@
+import { Heading, Link, Section } from "@/components";
 import {
   Factsheet as FactsheetInterface,
   FactsheetBase,
   FactsheetContent,
 } from "@/domain/protocols";
-
-import { Heading, Link } from "..";
-import { Section } from ".";
 
 interface FactsheetProps {
   factsheet: FactsheetInterface;

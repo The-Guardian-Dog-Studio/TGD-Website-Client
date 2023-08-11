@@ -1,8 +1,7 @@
 import { useMediaQuery } from "react-responsive";
 
+import { Heading, Link } from "@/components";
 import { NavigationLink } from "@/domain/protocols";
-
-import { Heading, Link } from ".";
 
 interface SideBarProps {
   navigationLinks: NavigationLink[];

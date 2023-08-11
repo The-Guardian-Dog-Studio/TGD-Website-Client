@@ -1,23 +1,25 @@
-import { Menu } from "@headlessui/react";
+import { Menu as MenuLib } from "@headlessui/react";
 
-import { Heading, Link } from "@/components";
+import { Link } from "@/components";
+import { MenuDropDown as Menu } from "@/components/layout/header";
 import { NavigationLink } from "@/domain/protocols";
 
 import { links } from "./tailwind-classes";
 
 interface SocialMedia {
+  title: string;
   navigationLinks: NavigationLink[];
 }
 
-const NavigationLinks = ({ navigationLinks }: SocialMedia): JSX.Element => {
+const NavigationLinks = ({
+  title,
+  navigationLinks,
+}: SocialMedia): JSX.Element => {
   return (
-    <>
-      <Heading level={4} className="ml-4 text-base">
-        Navegação
-      </Heading>
+    <Menu.Item title={title}>
       {navigationLinks.map((nav) => (
         <div className="p-1" key={nav.url}>
-          <Menu.Item>
+          <MenuLib.Item>
             {({ active }) => (
               <Link
                 noPrefix
@@ -25,15 +27,15 @@ const NavigationLinks = ({ navigationLinks }: SocialMedia): JSX.Element => {
                 href={nav.url}
                 className={`${links(
                   active
-                )} group flex w-full  items-center gap-4 rounded-md p-2 text-sm font-semibold`}
+                )} group flex w-full items-center  gap-4 rounded-md p-2 text-sm font-semibold transition-all`}
               >
                 {nav.text}
               </Link>
             )}
-          </Menu.Item>
+          </MenuLib.Item>
         </div>
       ))}
-    </>
+    </Menu.Item>
   );
 };
 
