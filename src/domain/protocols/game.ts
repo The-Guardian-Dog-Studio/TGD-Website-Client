@@ -1,5 +1,5 @@
 export interface Game {
-	bannerUrl: string;
-	name: string;
-	url: string;
+  bannerUrl: string;
+  name: string;
+  url: string;
 }

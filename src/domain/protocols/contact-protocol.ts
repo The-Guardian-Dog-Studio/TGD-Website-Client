@@ -1,8 +1,8 @@
 export interface Email {
-	email: string;
-	text: string;
+  email: string;
+  text: string;
 }
 
 export interface ContactData {
-	email: Email[];
+  email: Email[];
 }
