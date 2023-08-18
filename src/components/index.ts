@@ -6,6 +6,7 @@ export { default as Iframe } from "./iframe";
 export { default as Image } from "./image";
 export * from "./layout";
 export { Link } from "./link";
+export { default as Platforms } from "./platforms";
 export { default as Quote } from "./quote";
 export * from "./sections";
 export { default as SocialMedia } from "./social-media";
