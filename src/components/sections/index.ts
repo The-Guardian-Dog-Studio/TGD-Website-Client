@@ -3,7 +3,7 @@ export { default as ArticlesSection } from "./articles-section";
 export { default as AwardsSection } from "./awards-section";
 export { default as ContactSection } from "./contact-section";
 export { default as Factsheet } from "./factsheet";
-export { default as FeaturedSection } from "./featured-section";
+export { default as HeroBanner } from "./hero-banner";
 export { default as ImagesSection } from "./images-section";
 export { default as PressKitSection } from "./press-kit-section";
 export { default as ProjectsSection } from "./projects-section";

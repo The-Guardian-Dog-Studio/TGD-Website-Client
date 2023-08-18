@@ -20,7 +20,7 @@ const SocialMedia = ({
       <ul className={`flex gap-4 ${className}`}>
         {platforms.map((platform) => (
           <li key={platform.name}>
-            <Link noPrefix href={platform.url} title={platform.name}>
+            <Link noPrefix href={platform.link} title={platform.name}>
               <GetIcon
                 name={platform.icon}
                 className={`fill-brand-blue ${icons?.className}`}

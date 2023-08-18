@@ -6,9 +6,13 @@ const socialMediaPlatforms: SocialMediaPlatform[] = home["social-media"];
 
 interface FooterProps {
   showLinks?: boolean;
+  topPageHref?: string;
 }
 
-const Footer = ({ showLinks = true }: FooterProps): JSX.Element => {
+const Footer = ({
+  showLinks = true,
+  topPageHref = "#featured-game",
+}: FooterProps): JSX.Element => {
   return (
     <footer className="col-start-1 col-end-13 flex flex-col">
       {showLinks && (
@@ -23,7 +27,8 @@ const Footer = ({ showLinks = true }: FooterProps): JSX.Element => {
       )}
       <Link
         noAnimation
-        href="#featured-game"
+        noPrefix
+        href={topPageHref}
         className="mb-[-1.55rem] block self-center"
         aria-label="Voltar para o topo da página"
       >

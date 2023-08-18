@@ -39,7 +39,7 @@ const {
     <Seo title="Press Kit" />
   </Head>
 
-  <body class="grid grid-cols-12">
+  <body class="grid grid-cols-12" id="top">
     <PressKitNavigation
       navigationLinks={navigation}
       siteUrl={Astro.site?.toString() ?? ""}
@@ -115,7 +115,7 @@ const {
       </div>
     </main>
 
-    <Footer showLinks={false} />
+    <Footer topPageHref="#top" showLinks={false} />
     <style is:global>
       html,
       body {

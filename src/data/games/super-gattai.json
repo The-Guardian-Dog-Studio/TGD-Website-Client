@@ -1,0 +1,36 @@
+{
+  "name": "Super Gattai",
+  "slug": "super-gattai",
+  "banner": {
+    "url": "/super-gattai-banner.png",
+    "alt": "Call of the Racket"
+  },
+  "platforms": [
+    {
+      "name": "Itch.io",
+      "icon": "/steam.svg",
+      "link": "https://tgdstudio.itch.io/call-of-the-racket"
+    },
+    {
+      "name": "Steam",
+      "icon": "/steam.svg",
+      "link": "https://store.steampowered.com/"
+    },
+    {
+      "name": "PS4",
+      "icon": "/steam.svg",
+      "link": "https://store.playstation.com/pt-br/pages/latest"
+    }
+  ],
+  "images": [
+    {
+      "url": "/call-of-the-racket.png",
+      "alt": "Call of the Racket"
+    },
+    {
+      "url": "/super-gattai.png",
+      "alt": "Call of the Racket"
+    }
+  ],
+  "description": "Robin, um jovem arqueólogo, tenta desvendar os mistérios de uma antiga civilização, os Makalanians.\nEm sua jornada, um Racket com poderes misteriosos, em uma caverna escondida cheia de monstros disparando balas mortais, se junta a Robin para explodir a morte de volta aos inimigos e sair vivo desta antiga masmorra."
+}

@@ -1,5 +1,3 @@
-export interface SocialMediaPlatform {
-  name: string;
-  url: string;
-  icon: string;
-}
+import { Platform } from ".";
+
+export interface SocialMediaPlatform extends Platform {}

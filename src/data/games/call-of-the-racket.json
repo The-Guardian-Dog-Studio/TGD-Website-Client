@@ -1,0 +1,44 @@
+{
+  "name": "Call of the Racket",
+  "slug": "call-of-the-racket",
+  "banner": {
+    "url": "/call-of-the-racket.png",
+    "alt": "Call of the Racket"
+  },
+  "platforms": [
+    {
+      "name": "Itch.io",
+      "icon": "/itch-io.svg",
+      "link": "https://tgdstudio.itch.io/call-of-the-racket"
+    },
+    {
+      "name": "PS4",
+      "icon": "/playstation.svg",
+      "link": "https://store.playstation.com/pt-br/pages/latest"
+    },
+    {
+      "name": "Steam",
+      "icon": "/steam.svg",
+      "link": "https://store.steampowered.com/"
+    }
+  ],
+  "images": [
+    {
+      "url": "/TGD-Website-Client/call-of-the-racket.png",
+      "alt": "Call of the Racket"
+    },
+    {
+      "url": "/TGD-Website-Client/super-gattai.jpg",
+      "alt": "Call of the Racket"
+    },
+    {
+      "url": "/TGD-Website-Client/call-of-the-racket.png",
+      "alt": "Call of the Racket"
+    },
+    {
+      "url": "/TGD-Website-Client/super-gattai.jpg",
+      "alt": "Call of the Racket"
+    }
+  ],
+  "description": "Robin, um jovem arqueólogo, tenta desvendar os mistérios de uma antiga civilização, os Makalanians.\nEm sua jornada, um Racket com poderes misteriosos, em uma caverna escondida cheia de monstros disparando balas mortais, se junta a Robin para explodir a morte de volta aos inimigos e sair vivo desta antiga masmorra."
+}
