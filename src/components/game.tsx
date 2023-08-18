@@ -14,7 +14,7 @@ const Game = ({ bannerUrl, name, url }: GameProps): JSX.Element => {
         className="h-[330px] w-[262.5px] object-cover md:h-[440px] md:w-[350px]"
         alt={`Capa do jogo: ${name}`}
       />
-      <Link.Blank href={url} noPrefix title={name}>
+      <Link.Blank href={url} title={name}>
         <Button tabIndex={-1}>Jogar {name}</Button>
       </Link.Blank>
     </div>

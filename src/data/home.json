@@ -26,22 +26,22 @@
   "games": [
     {
       "bannerUrl": "/super-gattai.jpg",
-      "url": "https://negative-one.itch.io/super-gattai",
+      "url": "/games/super-gattai",
       "name": "Super Gattai"
     },
     {
       "bannerUrl": "/call-of-the-racket.png",
-      "url": "https://tgdstudio.itch.io/call-of-the-racket",
+      "url": "/games/call-of-the-racket",
       "name": "Call of the Racket"
     },
     {
       "bannerUrl": "/super-gattai.jpg",
-      "url": "https://negative-one.itch.io/super-gattai",
+      "url": "/games/super-gattai",
       "name": "Super Gattai"
     },
     {
       "bannerUrl": "/call-of-the-racket.png",
-      "url": "https://tgdstudio.itch.io/call-of-the-racket",
+      "url": "/games/call-of-the-racket",
       "name": "Call of the Racket"
     }
   ],
