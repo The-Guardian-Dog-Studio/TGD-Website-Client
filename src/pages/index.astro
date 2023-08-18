@@ -1,14 +1,23 @@
 ---
-import { AboutSection, ContactSection, FeaturedSection } from "@/components";
+import { AboutSection, ContactSection, HeroBanner } from "@/components";
 import GamesSection from "@/components/sections/games-section.astro";
 import { home } from "@/data";
 import Layout from "@/layouts/Layout.astro";
 ---
 
-<Layout title="TGD Studio | Home">
+<Layout title="Home">
   <main class="w-full">
-    <FeaturedSection featuredGame={home["featured-game"]} />
-    <GamesSection games={home["games"]} />
+    <HeroBanner
+      id="#featured-game"
+      scrollDownButton={{
+        active: true,
+        anchor: "#games",
+      }}
+      banner={{
+        url: home["featured-game"].bannerUrl,
+      }}
+    />
+    <GamesSection games={home.games} />
     <AboutSection aboutData={home["about"]} client:load />
     <ContactSection contactData={home["contact"]} />
   </main>
