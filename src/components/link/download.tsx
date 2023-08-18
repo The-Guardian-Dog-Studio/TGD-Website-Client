@@ -1,7 +1,8 @@
 import { Link } from "@/components";
 
-interface DownloadLinkProps
-  extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+import { LinkProps } from "./default";
+
+interface DownloadLinkProps extends LinkProps {
   href: string;
   children: string;
 }

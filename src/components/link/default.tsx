@@ -2,7 +2,8 @@ import { removeDoubleSlashes } from "@/utils";
 
 import { Download, DownloadLinkProps, LinkBlank, LinkBlankProps } from ".";
 
-interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface LinkProps
+  extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   noPrefix?: boolean;
   noAnimation?: boolean;
 }

@@ -1,5 +1,12 @@
+import { GamePlatform } from ".";
+
 export interface Game {
-  bannerUrl: string;
   name: string;
-  url: string;
+  slug: string;
+  description: string;
+  banner: {
+    url: string;
+    alt: string;
+  };
+  platforms?: GamePlatform[];
 }
