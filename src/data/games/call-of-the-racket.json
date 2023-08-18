@@ -2,23 +2,23 @@
   "name": "Call of the Racket",
   "slug": "call-of-the-racket",
   "banner": {
-    "url": "/call-of-the-racket.png",
+    "url": "/TGD-Website-Client/call-of-the-racket.png",
     "alt": "Call of the Racket"
   },
   "platforms": [
     {
       "name": "Itch.io",
-      "icon": "/itch-io.svg",
+      "icon": "/TGD-Website-Client/itch-io.svg",
       "link": "https://tgdstudio.itch.io/call-of-the-racket"
     },
     {
       "name": "PS4",
-      "icon": "/playstation.svg",
+      "icon": "/TGD-Website-Client/playstation.svg",
       "link": "https://store.playstation.com/pt-br/pages/latest"
     },
     {
       "name": "Steam",
-      "icon": "/steam.svg",
+      "icon": "/TGD-Website-Client/steam.svg",
       "link": "https://store.steampowered.com/"
     }
   ],

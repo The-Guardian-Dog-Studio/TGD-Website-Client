@@ -2,23 +2,23 @@
   "name": "Super Gattai",
   "slug": "super-gattai",
   "banner": {
-    "url": "/super-gattai-banner.png",
+    "url": "/TGD-Website-Client/super-gattai-banner.png",
     "alt": "Call of the Racket"
   },
   "platforms": [
     {
       "name": "Itch.io",
-      "icon": "/steam.svg",
+      "icon": "/TGD-Website-Client/steam.svg",
       "link": "https://tgdstudio.itch.io/call-of-the-racket"
     },
     {
       "name": "Steam",
-      "icon": "/steam.svg",
+      "icon": "/TGD-Website-Client/steam.svg",
       "link": "https://store.steampowered.com/"
     },
     {
       "name": "PS4",
-      "icon": "/steam.svg",
+      "icon": "/TGD-Website-Client/steam.svg",
       "link": "https://store.playstation.com/pt-br/pages/latest"
     }
   ],
