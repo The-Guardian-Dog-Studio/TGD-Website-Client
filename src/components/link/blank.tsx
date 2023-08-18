@@ -4,7 +4,7 @@ import { LinkProps } from "./default";
 
 interface LinkBlankProps extends LinkProps {
   href: string;
-  children: string;
+  children: React.ReactNode;
 }
 
 const LinkBlank = ({ href, children, ...props }: LinkBlankProps) => {

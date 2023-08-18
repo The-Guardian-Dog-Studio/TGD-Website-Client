@@ -21,7 +21,7 @@
     ]
   },
   "featured-game": {
-    "bannerUrl": "/call-of-the-racket-banner.png"
+    "bannerUrl": "/super-gattai-banner.png"
   },
   "games": [
     {
@@ -89,17 +89,17 @@
   "social-media": [
     {
       "name": "Facebook",
-      "url": "https://www.facebook.com/tgdgames/",
+      "link": "https://www.facebook.com/tgdgames/",
       "icon": "facebook-outline"
     },
     {
       "name": "Instagram",
-      "url": "https://www.instagram.com/tgdgames/",
+      "link": "https://www.instagram.com/tgdgames/",
       "icon": "instagram-outline"
     },
     {
       "name": "Twitter",
-      "url": "https://twitter.com/TheGuardianDogS",
+      "link": "https://twitter.com/TheGuardianDogS",
       "icon": "twitter-outline"
     }
   ]

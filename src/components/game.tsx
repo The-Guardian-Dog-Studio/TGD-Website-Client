@@ -1,7 +1,10 @@
 import { Button, Image, Link } from "@/components";
 import { Game } from "@/domain/protocols";
 
-interface GameProps extends Game {}
+interface GameProps extends Pick<Game, "name"> {
+  bannerUrl: string;
+  url: string;
+}
 
 const Game = ({ bannerUrl, name, url }: GameProps): JSX.Element => {
   return (
@@ -11,9 +14,9 @@ const Game = ({ bannerUrl, name, url }: GameProps): JSX.Element => {
         className="h-[330px] w-[262.5px] object-cover md:h-[440px] md:w-[350px]"
         alt={`Capa do jogo: ${name}`}
       />
-      <Link href={url} noPrefix target="_blank" rel="noreferrer" title={name}>
+      <Link.Blank href={url} noPrefix title={name}>
         <Button tabIndex={-1}>Jogar {name}</Button>
-      </Link>
+      </Link.Blank>
     </div>
   );
 };
