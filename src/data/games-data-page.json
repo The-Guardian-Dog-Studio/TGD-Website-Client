@@ -12,17 +12,17 @@
   "social-media": [
     {
       "name": "Facebook",
-      "url": "https://www.facebook.com/tgdgames/",
+      "link": "https://www.facebook.com/tgdgames/",
       "icon": "facebook-filled"
     },
     {
       "name": "Instagram",
-      "url": "https://www.instagram.com/tgdgames/",
+      "link": "https://www.instagram.com/tgdgames/",
       "icon": "instagram-filled"
     },
     {
       "name": "Twitter",
-      "url": "https://twitter.com/TheGuardianDogS",
+      "link": "https://twitter.com/TheGuardianDogS",
       "icon": "twitter-filled"
     }
   ]
