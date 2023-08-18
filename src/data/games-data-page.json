@@ -1,0 +1,29 @@
+{
+  "connect": {
+    "text": "Conecte-se",
+    "link": "https://www.tgdstudio.com.br/connect"
+  },
+  "description": {
+    "title": "Descrição"
+  },
+  "download": {
+    "title": "Baixar"
+  },
+  "social-media": [
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/tgdgames/",
+      "icon": "facebook-filled"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/tgdgames/",
+      "icon": "instagram-filled"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/TheGuardianDogS",
+      "icon": "twitter-filled"
+    }
+  ]
+}
