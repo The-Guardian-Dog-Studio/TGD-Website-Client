@@ -10,7 +10,11 @@ const Head = ({ children, generator }: HeadProps): JSX.Element => {
       <meta name="viewport" content="width=device-width" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <link
+        rel="icon"
+        type="image/svg+xml"
+        href="/TGD-Website-Client/favicon.svg"
+      />
       <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito:wght@300;400;600;700&family=Orbitron:wght@400;500;700&display=swap"
         rel="stylesheet"
