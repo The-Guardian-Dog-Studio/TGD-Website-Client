@@ -3,6 +3,4 @@ export interface Email {
   text: string;
 }
 
-export interface ContactData {
-  email: Email[];
-}
+export type ContactData = Email[];

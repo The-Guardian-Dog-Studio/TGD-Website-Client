@@ -1,20 +1,17 @@
 ---
 import {
-  Button,
   Heading,
-  HeroBanner,
-  Link,
   Platforms,
   Section,
-  SocialMedia,
+	GameHero,
 } from "@/components";
-import pageData from "@/data/games-data-page.json";
+import pageData from "@/database/games-data-page.json";
 import { Game } from "@/domain/protocols";
 import Layout from "@/layouts/Layout.astro";
 
 export async function getStaticPaths() {
   const availableGames = (await Astro.glob(
-    "../../data/games/*.json"
+    "../../database/games/*.json"
   )) as unknown as Game[];
 
   return availableGames.map((game) => {
@@ -32,46 +29,8 @@ const {
 
 <Layout title={game.name} topPageHref="#top">
   <main class="w-full" id="top">
-    <HeroBanner
-      id="#hero"
-      banner={{
-        url: game.banner.url,
-      }}
-      className="h-[calc(100vh-75px)]"
-    >
-      <footer
-        class="absolute bottom-0 flex min-h-[75px] w-full justify-center bg-gray-900 text-white"
-      >
-        <div
-          class="flex w-[90vw] max-w-screen-xl flex-wrap items-center justify-around gap-6 p-4"
-        >
-          <div class="flex flex-wrap items-center justify-around gap-8 text-lg">
-            <Link.Blank noPrefix href={pageData.connect.link} noAnimation>
-              <Button
-                tabIndex={-1}
-                noShadow
-                className="flex w-40 items-center justify-center gap-3 py-1"
-              >
-                {pageData.connect.text}
-              </Button>
-            </Link.Blank>
 
-            <SocialMedia
-              className="flex gap-8 md:gap-4"
-              platforms={pageData["social-media"]}
-            />
-          </div>
-
-          <div class="flex gap-7 max-sm:hidden">
-            {
-              game.platforms !== undefined && game.platforms.length > 0 && (
-                <Platforms platforms={game.platforms} />
-              )
-            }
-          </div>
-        </div>
-      </footer>
-    </HeroBanner>
+		<GameHero game={game} socialMedia={pageData["social-media"]} connect={pageData.connect}  />
 
     <Section id="description">
       <Heading level={1} className="mb-8">

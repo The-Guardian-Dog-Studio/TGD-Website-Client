@@ -1,34 +1,42 @@
 {
-  "name": "Super Gattai",
-  "slug": "super-gattai",
+  "name": "Call of the Racket",
+  "slug": "call-of-the-racket",
   "banner": {
-    "url": "/super-gattai-banner.png",
+    "url": "/call-of-the-racket.png",
     "alt": "Call of the Racket"
   },
   "platforms": [
     {
       "name": "Itch.io",
-      "icon": "/steam.svg",
+      "icon": "/TGD-Website-Client/itch-io.svg",
       "link": "https://tgdstudio.itch.io/call-of-the-racket"
     },
     {
-      "name": "Steam",
-      "icon": "/steam.svg",
-      "link": "https://store.steampowered.com/"
+      "name": "PS4",
+      "icon": "/TGD-Website-Client/playstation.svg",
+      "link": "https://store.playstation.com/pt-br/pages/latest"
     },
     {
-      "name": "PS4",
-      "icon": "/steam.svg",
-      "link": "https://store.playstation.com/pt-br/pages/latest"
+      "name": "Steam",
+      "icon": "/TGD-Website-Client/steam.svg",
+      "link": "https://store.steampowered.com/"
     }
   ],
   "images": [
     {
-      "url": "/call-of-the-racket.png",
+      "url": "/TGD-Website-Client/call-of-the-racket.png",
       "alt": "Call of the Racket"
     },
     {
-      "url": "/super-gattai.png",
+      "url": "/TGD-Website-Client/super-gattai.jpg",
+      "alt": "Call of the Racket"
+    },
+    {
+      "url": "/TGD-Website-Client/call-of-the-racket.png",
+      "alt": "Call of the Racket"
+    },
+    {
+      "url": "/TGD-Website-Client/super-gattai.jpg",
       "alt": "Call of the Racket"
     }
   ],
