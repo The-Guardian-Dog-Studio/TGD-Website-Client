@@ -1,5 +1,12 @@
 # Changelog
 
+### 0.2.1 (2023-08-28)
+
+#### Bug Fixes
+
+- incorrect path to favicon (64097d98)
+- incorrect file path on game page (434a2f1f)
+
 ### 0.2.0 (2023-08-28)
 
 #### Chores
