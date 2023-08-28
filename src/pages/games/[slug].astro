@@ -4,6 +4,7 @@ import {
   Platforms,
   Section,
 	GameHero,
+	Image,
 } from "@/components";
 import pageData from "@/database/games-data-page.json";
 import { Game } from "@/domain/protocols";
@@ -42,8 +43,8 @@ const {
           {game.description}
         </p>
 
-        <img
-          class="w-full lg:w-[500px]"
+        <Image
+          className="w-full lg:w-[500px]"
           src={game.banner.url}
           alt={game.banner.alt}
         />

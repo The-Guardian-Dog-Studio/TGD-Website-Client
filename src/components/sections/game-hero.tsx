@@ -1,5 +1,6 @@
 import { Button, HeroBanner, Link, Platforms, SocialMedia } from "@/components";
 import { Game, SocialMediaPlatform } from "@/domain/protocols";
+import { removeDoubleSlashes } from "@/utils";
 
 interface ContactSectionProps {
   game: Game;
@@ -19,7 +20,7 @@ const ContactSection = ({
     <HeroBanner
       id="#hero"
       banner={{
-        url: game.banner.url,
+        url: removeDoubleSlashes(game.banner.url, false),
       }}
       className="h-[calc(100vh-75px)]"
     >
