@@ -1,8 +1,9 @@
 import { Link, Logo, SocialMedia } from "@/components";
-import { home } from "@/data";
 import { SocialMediaPlatform } from "@/domain/protocols";
+import { makeHomeData } from "@/main/factories";
 
-const socialMediaPlatforms: SocialMediaPlatform[] = home["social-media"];
+const { socialMedia } = makeHomeData();
+const socialMediaPlatforms: SocialMediaPlatform[] = socialMedia.data;
 
 interface FooterProps {
   showLinks?: boolean;

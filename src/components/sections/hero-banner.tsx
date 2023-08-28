@@ -1,5 +1,4 @@
 import { Image, Link } from "@/components";
-import { removeDoubleSlashes } from "@/utils";
 
 interface FeaturedSectionProps
   extends React.ComponentPropsWithoutRef<"section"> {
@@ -20,14 +19,12 @@ const HeroBanner = ({
   children,
   ...props
 }: FeaturedSectionProps): JSX.Element => {
-  const backgroundUrl = removeDoubleSlashes(banner.url, false);
-
   return (
     <section
       id={id}
       className="relative mt-[-5rem] grid h-screen w-full place-items-center"
       style={{
-        background: `url(${backgroundUrl})`,
+        background: `url(${banner.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",

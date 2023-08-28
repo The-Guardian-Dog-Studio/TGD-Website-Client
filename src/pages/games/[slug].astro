@@ -8,13 +8,13 @@ import {
   Section,
   SocialMedia,
 } from "@/components";
-import pageData from "@/data/games-data-page.json";
+import pageData from "@/database/games-data-page.json";
 import { Game } from "@/domain/protocols";
 import Layout from "@/layouts/Layout.astro";
 
 export async function getStaticPaths() {
   const availableGames = (await Astro.glob(
-    "../../data/games/*.json"
+    "../../database/games/*.json"
   )) as unknown as Game[];
 
   return availableGames.map((game) => {

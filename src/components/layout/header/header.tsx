@@ -1,18 +1,12 @@
 import { useMediaQuery } from "react-responsive";
 
 import { MenuDropDown as Menu } from "@/components";
-import { home } from "@/data";
-import { NavigationLink, SocialMediaPlatform } from "@/domain/protocols";
+import { makeHomeData } from "@/main/factories";
 
 import DesktopHeader from "./desktop-header";
 import MobileHeader from "./mobile-header";
 
-const socialMediaTitle: string = home["social-media-title"];
-const socialMediaPlatforms: SocialMediaPlatform[] = home["social-media"];
-const navigationLinks: {
-  "mobile-title": string;
-  links: NavigationLink[];
-} = home["navigation"];
+const { socialMedia, navigation } = makeHomeData();
 
 const Header = (): JSX.Element => {
   const isDestopDevice = useMediaQuery({ minWidth: 768 });
@@ -22,18 +16,18 @@ const Header = (): JSX.Element => {
       <div className="m-auto flex w-11/12 max-w-screen-xl items-center justify-between">
         {isDestopDevice ? (
           <DesktopHeader
-            navigationLinks={navigationLinks.links}
-            socialMediaPlatforms={socialMediaPlatforms}
+            navigationLinks={navigation.data}
+            socialMediaPlatforms={socialMedia.data}
           />
         ) : (
           <MobileHeader>
             <Menu.NavigationLinks
-              title={navigationLinks["mobile-title"]}
-              navigationLinks={navigationLinks.links}
+              title={navigation.title}
+              navigationLinks={navigation.data}
             />
             <Menu.SocialMediaLinks
-              title={socialMediaTitle}
-              socialMediaPlatforms={socialMediaPlatforms}
+              title={socialMedia.title}
+              socialMediaPlatforms={socialMedia.data}
             />
           </MobileHeader>
         )}

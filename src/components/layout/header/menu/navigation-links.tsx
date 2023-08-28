@@ -3,6 +3,7 @@ import { Menu as MenuLib } from "@headlessui/react";
 import { Link } from "@/components";
 import { MenuDropDown as Menu } from "@/components/layout/header";
 import { NavigationLink } from "@/domain/protocols";
+import { removeDoubleSlashes } from "@/utils";
 
 import { links } from "./tailwind-classes";
 
@@ -24,7 +25,7 @@ const NavigationLinks = ({
               <Link
                 noPrefix
                 noAnimation
-                href={nav.url}
+                href={removeDoubleSlashes(nav.url, false)}
                 className={`${links(
                   active
                 )} group flex w-full items-center  gap-4 rounded-md p-2 text-sm font-semibold transition-all`}

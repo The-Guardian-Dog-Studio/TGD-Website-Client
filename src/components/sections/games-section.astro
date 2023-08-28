@@ -3,9 +3,14 @@
 import { Game as GameComponent, Heading, Section } from "@/components";
 import { Game } from "@/domain/protocols";
 
-interface Props {
-  games: Game[];
+interface GameProps extends Pick<Game, "name" | "banner">  {
+		url: string;
 }
+
+interface Props {
+  games: GameProps[];
+}
+
 
 const { games } = Astro.props;
 ---

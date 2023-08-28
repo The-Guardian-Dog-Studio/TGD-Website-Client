@@ -15,19 +15,20 @@ import {
   TeamSection,
   VideosSection,
 } from "@/components";
-import { pressKit } from "@/data";
+import { makePressKitData } from "@/main/factories";
 
-const repeatedSections = ["description", "history", "video-policy"] as const;
+const pressKit = makePressKitData();
+const repeatedSections = ["description", "history", "videoPolicy"] as const;
 const {
-  "navigation-title": navigationTitle,
+	siteUrl,
   navigation,
   factsheet,
   projects,
   videos,
   images,
   logos,
-  "awards-and-recognition": awards,
-  "selected-articles": articles,
+  awards,
+  articles,
   team,
   contact,
 } = pressKit;
@@ -41,9 +42,9 @@ const {
 
   <body class="grid grid-cols-12" id="top">
     <PressKitNavigation
-      navigationLinks={navigation}
-      siteUrl={Astro.site?.toString() ?? ""}
-      title={navigationTitle}
+      navigationLinks={navigation.data}
+      siteUrl={siteUrl}
+      title={navigation.title}
       client:only="react"
     />
 
