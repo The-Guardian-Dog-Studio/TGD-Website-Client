@@ -1,8 +1,10 @@
 ---
 import { AboutSection, ContactSection, HeroBanner } from "@/components";
 import GamesSection from "@/components/sections/games-section.astro";
-import { home } from "@/data";
 import Layout from "@/layouts/Layout.astro";
+import { makeHomeData } from "@/main/factories";
+
+const homeData = makeHomeData()
 ---
 
 <Layout title="Home">
@@ -14,11 +16,11 @@ import Layout from "@/layouts/Layout.astro";
         anchor: "#games",
       }}
       banner={{
-        url: home["featured-game"].bannerUrl,
+        url: homeData.featuredGame.bannerUrl,
       }}
     />
-    <GamesSection games={home.games} />
-    <AboutSection aboutData={home["about"]} client:load />
-    <ContactSection contactData={home["contact"]} />
+    <GamesSection games={homeData.games} />
+    <AboutSection aboutData={homeData.about} client:load />
+    <ContactSection contactData={homeData.contact} />
   </main>
 </Layout>

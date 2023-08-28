@@ -26,22 +26,22 @@
   "games": [
     {
       "bannerUrl": "/super-gattai.jpg",
-      "url": "/games/super-gattai",
+      "slug": "super-gattai",
       "name": "Super Gattai"
     },
     {
       "bannerUrl": "/call-of-the-racket.png",
-      "url": "/games/call-of-the-racket",
+      "slug": "call-of-the-racket",
       "name": "Call of the Racket"
     },
     {
       "bannerUrl": "/super-gattai.jpg",
-      "url": "/games/super-gattai",
+      "slug": "super-gattai",
       "name": "Super Gattai"
     },
     {
       "bannerUrl": "/call-of-the-racket.png",
-      "url": "/games/call-of-the-racket",
+      "slug": "call-of-the-racket",
       "name": "Call of the Racket"
     }
   ],
