@@ -17,7 +17,7 @@ const MobileHeader = ({ children }: MobileHeaderProps): JSX.Element => {
           <>
             <Menu.Toggle isOpen={open} />
             <Menu.Transition>
-              <MenuLib.Items className="absolute right-0 mt-[1.4rem] w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg focus:outline-none">
+              <MenuLib.Items className="absolute right-0 mt-[1.4rem] max-h-[calc(100vh-6rem)] w-56 origin-top-right divide-y divide-gray-100 overflow-y-auto rounded-md bg-white shadow-lg focus:outline-none">
                 {children}
               </MenuLib.Items>
             </Menu.Transition>
