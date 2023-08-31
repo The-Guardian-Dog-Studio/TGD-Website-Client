@@ -1,4 +1,5 @@
 export * from "./about-protocol";
+export * from "./collaborator";
 export * from "./contact-protocol";
 export * from "./factsheet";
 export * from "./featured-game";
