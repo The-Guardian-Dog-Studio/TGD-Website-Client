@@ -18,7 +18,9 @@ const PressKitSection = ({
       {...props}
       className={`!mx-0 !mt-0 !items-start !py-14 ${props.className}`}
     >
-      <Heading level={2}>{title}</Heading>
+      <Heading className="col-span-full" level={2}>
+        {title}
+      </Heading>
 
       {children}
     </Section>

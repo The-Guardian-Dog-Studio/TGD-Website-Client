@@ -1,0 +1,97 @@
+{
+  "title": "Equipe",
+  "content": [
+    {
+      "name": "Saulo Camarotti",
+      "role": "Fundador, Produtor e Desenvolvedor",
+      "connect": [
+        {
+          "name": "Linkedin",
+          "link": "https://www.linkedin.com/in/saulocamarotti/",
+          "icon": "linkedin-outline"
+        },
+        {
+          "name": "Instagram",
+          "link": "https://www.instagram.com/in/saulocamarotti/",
+          "icon": "instagram-outline"
+        }
+      ]
+    },
+    {
+      "name": "Guilherme Mazzano",
+      "role": "Game Designer",
+      "connect": [
+        {
+          "name": "Linkedin",
+          "link": "https://www.linkedin.com/in/saulocamarotti/",
+          "icon": "linkedin-outline"
+        },
+        {
+          "name": "Portfolio",
+          "link": "https://www.portfolio.com/in/saulocamarotti/",
+          "icon": "portfolio-outline"
+        }
+      ]
+    },
+    {
+      "name": "Leonardo Prunk",
+      "role": "Desenvolvedor",
+      "connect": [
+        {
+          "name": "Linkedin",
+          "link": "https://www.linkedin.com/in/saulocamarotti/",
+          "icon": "linkedin-outline"
+        }
+      ]
+    },
+    {
+      "name": "Leonardo Prunk",
+      "role": "Desenvolvedor",
+      "connect": [
+        {
+          "name": "Linkedin",
+          "link": "https://www.linkedin.com/in/saulocamarotti/",
+          "icon": "linkedin-outline"
+        }
+      ]
+    },
+    {
+      "name": "Leonardo Prunk",
+      "role": "Desenvolvedor",
+      "connect": [
+        {
+          "name": "Linkedin",
+          "link": "https://www.linkedin.com/in/saulocamarotti/",
+          "icon": "linkedin-outline"
+        }
+      ]
+    },
+    {
+      "name": "Leonardo Prunk",
+      "role": "Desenvolvedor",
+      "connect": [
+        {
+          "name": "Linkedin",
+          "link": "https://www.linkedin.com/in/saulocamarotti/",
+          "icon": "linkedin-outline"
+        },
+        {
+          "name": "Instagram",
+          "link": "https://www.instagram.com/in/saulocamarotti/",
+          "icon": "instagram-outline"
+        }
+      ]
+    },
+    {
+      "name": "Leonardo Prunk",
+      "role": "Desenvolvedor",
+      "connect": [
+        {
+          "name": "Linkedin",
+          "link": "https://www.linkedin.com/in/saulocamarotti/",
+          "icon": "linkedin-outline"
+        }
+      ]
+    }
+  ]
+}

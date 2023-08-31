@@ -236,23 +236,6 @@
       }
     ]
   },
-  "team": {
-    "title": "Equipe",
-    "content": [
-      {
-        "name": "Saulo Camarotti",
-        "role": "Fundador, Produtor e Desenvolvedor"
-      },
-      {
-        "name": "Guilherme Mazzano",
-        "role": "Game Designer"
-      },
-      {
-        "name": "Leonardo Prunk",
-        "role": "Desenvolvedor"
-      }
-    ]
-  },
   "contact": {
     "title": "Contato",
     "content": [
