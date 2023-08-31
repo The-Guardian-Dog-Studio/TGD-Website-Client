@@ -1,17 +1,19 @@
 ---
-import {TeamSection} from "@/components";
+import { TeamSection } from "@/components";
 import Layout from "@/layouts/Layout.astro";
 import { makeTeamData } from "@/main/factories";
 
-const teamData = makeTeamData()
+const teamData = makeTeamData();
 ---
 
 <Layout title="Team" topPageHref="">
-  <main class="w-full min-h-[calc(100vh-15.75rem)]" id="">
-		<div class="w-11/12 mx-auto max-w-screen-lg">
-			<TeamSection
-				className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 sm:gap-8"
-				title={teamData.title} content={teamData.data} />
-		</div>
+  <main class="min-h-[calc(100vh-15.75rem)] w-full" id="">
+    <div class="mx-auto w-11/12 max-w-screen-lg">
+      <TeamSection
+        className="grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3"
+        title={teamData.title}
+        content={teamData.data}
+      />
+    </div>
   </main>
 </Layout>

@@ -1,11 +1,5 @@
 ---
-import {
-  Heading,
-  Platforms,
-  Section,
-	GameHero,
-	Image,
-} from "@/components";
+import { GameHero, Heading, Image, Platforms, Section } from "@/components";
 import pageData from "@/database/games-data-page.json";
 import { Game } from "@/domain/protocols";
 import Layout from "@/layouts/Layout.astro";
@@ -30,8 +24,11 @@ const {
 
 <Layout title={game.name} topPageHref="#top">
   <main class="w-full" id="top">
-
-		<GameHero game={game} socialMedia={pageData["social-media"]} connect={pageData.connect}  />
+    <GameHero
+      game={game}
+      socialMedia={pageData["social-media"]}
+      connect={pageData.connect}
+    />
 
     <Section id="description">
       <Heading level={1} className="mb-8">
