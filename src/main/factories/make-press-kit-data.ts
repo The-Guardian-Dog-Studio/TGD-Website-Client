@@ -1,4 +1,5 @@
 import { pressKit } from "@/database";
+import { makeTeamData } from "@/main/factories";
 
 const repeatedSections = ["description", "history", "video-policy"] as const;
 const {
@@ -12,7 +13,6 @@ const {
   logos,
   "awards-and-recognition": awards,
   "selected-articles": articles,
-  team,
   contact,
   history,
   description,
@@ -33,7 +33,7 @@ const makePressKitData = () => ({
   logos,
   awards,
   articles,
-  team,
+  team: makeTeamData(),
   contact,
   history,
   description,
