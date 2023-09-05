@@ -23,7 +23,10 @@ const makePressKitData = () => ({
   siteUrl,
   navigation: {
     title: navigationTitle,
-    data: navigationData,
+    data: navigationData.map((link) => ({
+      ...link,
+      url: `/press-kit${link.url}`,
+    })),
   },
   repeatedSections,
   factsheet,

@@ -108,7 +108,7 @@ const {
           {
             contact.content.map((contact) => (
               <PressKitSection.Content title={contact.name}>
-                <Link.Blank href={contact.url}>{contact.text}</Link.Blank>
+                <Link.Blank href={contact.url} noPrefix className="break-all text-brand-blue">{contact.text}</Link.Blank>
               </PressKitSection.Content>
             ))
           }

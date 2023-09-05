@@ -13,7 +13,7 @@ const TeamSection = ({ title, content, className }: TeamSectionProps) => {
       id="team"
       hr={{ className: "lg:hidden block col-start-1 col-end-3" }}
       title={title}
-      className={className}
+      className={`col-auto grid grid-cols-1 max-lg:col-start-1 max-lg:col-end-3 sm:grid-cols-2 lg:grid-cols-1 ${className}`}
     >
       {content.map((person) => (
         <PressKitSection.Content title={person.name} key={person.name}>
