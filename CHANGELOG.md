@@ -1,29 +1,29 @@
 # Changelog
 
-#### 0.3.1 (2023-09-05)
+### 0.3.1 (2023-09-05)
 
-##### Chores
+#### Chores
 
 - **.prettierrc:** add prettier plugin astro (63d405d1)
 
-##### New Features
+#### New Features
 
 - add link to team page in nav bar (eee3ec15)
 - add team page (90cb6f46)
 - add make team data factory (2174bdaa)
 - add Collaborator protocol (dd241bf4)
 
-##### Bug Fixes
+#### Bug Fixes
 
 - incorrect url in press kit navigation links (d789993f)
 - **mobile-header.tsx:** unavalible scroll on tiny mobile screen (eaa61572)
 
-##### Refactors
+#### Refactors
 
 - better responsive press-kit page (111a221f)
 - using team data from factory (9f3913b2)
 
-##### Code Style Changes
+#### Code Style Changes
 
 - code format and lint (fd2887f0)
 
