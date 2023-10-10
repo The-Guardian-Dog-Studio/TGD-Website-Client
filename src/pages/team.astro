@@ -17,3 +17,76 @@ const teamData = makeTeamData();
     </div>
   </main>
 </Layout>
+
+
+<script is:inline>
+	gsap.registerPlugin(ScrollTrigger);
+
+	document.querySelectorAll("main #team div").forEach((el, i) => {
+	  gsap.to(el, {
+	    opacity: 0,
+	    y: -50,
+	    duration: 0,
+	    scrollTrigger: el
+	  })
+
+	  gsap.to(el, {
+	    opacity: 1,
+	    y: 0,
+	    duration: 0.25,
+	    delay: 0.05 * i,
+	    scrollTrigger: el
+	  })
+
+	  const li = el.querySelectorAll("li")
+	  li.forEach((li, i) => {
+	    gsap.to(li, {
+	      opacity: 0,
+	      x: -50,
+	      duration: 0,
+	      scrollTrigger: el
+	    })
+
+	    gsap.to(li, {
+	      opacity: 1,
+	      x: 0,
+	      duration: 0.5,
+	      delay: 0.25 * i,
+	      scrollTrigger: el
+	    })
+	  })
+	})
+
+	gsap.to("#footer", {
+	  opacity: 0,
+	  duration: 0,
+	  y: 100,
+	  scrollTrigger: "#footer"
+	})
+
+
+	gsap.to("#footer", {
+	  opacity: 1,
+	  duration: 0.5,
+	  y: 0,
+	  scrollTrigger: "#footer"
+	})
+
+
+	gsap.to("#footer>div", {
+	  opacity: 0,
+	  duration: 0,
+	  y: 50,
+	  scrollTrigger: "#footer"
+	})
+
+
+	gsap.to("#footer>div", {
+	  opacity: 1,
+	  duration: 0.5,
+	  y: 0,
+	  delay: 0.25,
+	  scrollTrigger: "#footer"
+	})
+</script>
+

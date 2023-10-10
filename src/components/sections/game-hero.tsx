@@ -18,11 +18,11 @@ const ContactSection = ({
 }: ContactSectionProps): JSX.Element => {
   return (
     <HeroBanner
-      id="#hero"
+      id="hero"
       banner={{
         url: removeDoubleSlashes(game.banner.url, false),
       }}
-      className="h-[calc(100vh-75px)]"
+      className="-mt-[75px] h-[calc(100vh-75px)]"
     >
       <footer className="absolute bottom-0 flex min-h-[75px] w-full justify-center bg-gray-900 text-white">
         <div className="flex w-[90vw] max-w-screen-xl flex-wrap items-center justify-around gap-6 p-4">

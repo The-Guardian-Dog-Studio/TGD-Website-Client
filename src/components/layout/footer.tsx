@@ -15,7 +15,7 @@ const Footer = ({
   topPageHref = "#featured-game",
 }: FooterProps): JSX.Element => {
   return (
-    <footer className="col-start-1 col-end-13 flex flex-col">
+    <footer id="footer" className="col-start-1 col-end-13 flex flex-col">
       {showLinks && (
         <div className="flex flex-col items-center justify-center gap-8 p-8 md:flex-row md:gap-36">
           <Logo variant="gray" />
