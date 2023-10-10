@@ -51,7 +51,7 @@ const {
     <main
       class="col-start-1 col-end-13 px-10 pt-14 lg:col-start-4 lg:col-end-13 lg:pr-16"
     >
-      <div class="invisible ml-auto hidden w-fit lg:visible lg:block">
+      <div id="logo" class="invisible ml-auto hidden w-fit lg:visible lg:block">
         <Logo />
       </div>
 
@@ -123,5 +123,150 @@ const {
         scroll-behavior: smooth;
       }
     </style>
+
+		<script is:inline>
+			gsap.registerPlugin(ScrollTrigger);
+
+
+			document.addEventListener("DOMContentLoaded", () => {
+				setTimeout(() => {
+				gsap.to("#header", {
+						opacity: 0,
+						y: -100,
+						duration: 0,
+						scrollTrigger: "#header"
+					}
+				)
+
+				gsap.to("#header", {
+					opacity: 1,
+					y: 0,
+					duration: 0.5,
+					scrollTrigger: "#header"
+					}
+				)
+				
+				gsap.to("#sidebar", {
+						opacity: 0,
+						duration: 0,
+						scrollTrigger: "#sidebar"
+					}
+				)
+
+				gsap.to("#sidebar", {
+					opacity: 1,
+					duration: 0.5,
+					scrollTrigger: "#sidebar"
+					}
+				)
+
+				document.querySelectorAll("#sidebar nav ul li").forEach((el, i) => {
+					gsap.to(el, {
+						opacity: 0,
+						x: -50,
+						duration: 0,
+						scrollTrigger: el
+						}
+					)
+
+					gsap.to(el, {
+						opacity: 1,
+						x: 0,
+						duration: 0.5,
+						delay: 0.05 * i,
+						scrollTrigger: el
+					})
+				})
+				}, 400)
+			})
+
+
+			gsap.to("#logo", {
+				opacity: 0,
+				x: +50,
+				duration: 0,
+				scrollTrigger: "#logo"
+				}
+			)
+
+			gsap.to("#logo", {
+				opacity: 1,
+				x: 0,
+				duration: 0.5,
+				scrollTrigger: "#logo"
+				}
+			)
+
+			document.querySelectorAll("hr").forEach((el) => {
+				gsap.to(el, {
+					opacity: 0,
+					duration: 0,
+					scale: 0,
+					scrollTrigger: el
+					}
+				)
+
+				gsap.to(el, {
+					opacity: 1,
+					duration: 2,
+					scale: 1,
+					scrollTrigger: el
+					}
+				)
+			})
+
+			document.querySelectorAll("main section").forEach((el, i) => {
+				gsap.to(el, {
+					opacity: 0,
+					duration: 0,
+					y: -50,
+					scrollTrigger: el
+					}
+				)
+
+				gsap.to(el, {
+					opacity: 1,
+					duration: 0.5,
+					y: 0,
+					delay: 0.05 * i,
+					scrollTrigger: el
+					}
+				)
+			})
+
+
+			gsap.to("#footer", {
+				opacity: 0,
+				duration: 0,
+				y: 100,
+				scrollTrigger: "#footer"
+			})
+
+
+			gsap.to("#footer", {
+				opacity: 1,
+				duration: 0.5,
+				y: 0,
+				scrollTrigger: "#footer"
+			})
+
+
+			gsap.to("#footer>div", {
+				opacity: 0,
+				duration: 0,
+				y: 50,
+				scrollTrigger: "#footer"
+			})
+
+
+			gsap.to("#footer>div", {
+				opacity: 1,
+				duration: 0.5,
+				y: 0,
+				delay: 0.25,
+				scrollTrigger: "#footer"
+			})
+		</script>
+
   </body>
 </html>
