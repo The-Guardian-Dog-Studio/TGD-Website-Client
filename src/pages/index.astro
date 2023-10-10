@@ -24,3 +24,211 @@ const homeData = makeHomeData();
     <ContactSection contactData={homeData.contact} />
   </main>
 </Layout>
+
+<script is:inline>
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to("#header", {
+		opacity: 0,
+		y: -100,
+		duration: 0,
+		scrollTrigger: "#header"
+	}
+)
+
+gsap.to("#header", {
+	opacity: 1,
+	y: 0,
+	duration: 0.5,
+	scrollTrigger: "#header"
+	}
+)
+
+gsap.to("#featured-game", {
+	opacity: 0,
+	duration: 0,
+	scrollTrigger: "#featured-game"
+	}
+)
+
+gsap.to("#featured-game", {
+	opacity: 1,
+	duration: 0.5,
+	scrollTrigger: "#featured-game"
+	}
+)
+
+gsap.to("#games-carousel", {
+	opacity: 0,
+	duration: 0,
+	scrollTrigger: "#games-carousel"
+	}
+)
+
+gsap.to("#games-carousel", {
+	opacity: 1,
+	duration: 0.5,
+	scrollTrigger: "#games-carousel"
+	}
+)
+
+document.querySelectorAll("#games-carousel li").forEach((el, i) => {
+	if(!el.classList.contains("is-prev")|| !el.classList.contains("is-next") || !el.classList.contains("is-active")) return
+	gsap.to(el, {
+		opacity: 0,
+		duration: 0,
+		y: -50,
+		scrollTrigger: el
+	})
+
+	gsap.to(el, {
+		opacity: 1,
+		duration: 0.5,
+		y: 0,
+		delay: 0.25 * i,
+		scrollTrigger: el
+	})
+
+el.querySelectorAll("button").forEach((button, i) => {
+	gsap.to(button, {
+		opacity: 0,
+		duration: 0,
+		x: -50,
+		scrollTrigger: el
+	})
+
+	gsap.to(button, {
+		opacity: 1,
+		duration: 0.5,
+		x: 0,
+		delay: 0.25 * i *2,
+		scrollTrigger: el
+	})
+		
+	})
+});
+
+gsap.to("#about", {
+	opacity: 0,
+	duration: 0,
+	scrollTrigger: "#about"
+	}
+)
+
+gsap.to("#about", {
+	opacity: 1,
+	duration: 0.25,
+	scrollTrigger: "#about"
+	}
+)
+
+const aboutImg = document.querySelector("#about img")
+gsap.to(aboutImg, {
+	opacity: 0,
+	duration: 0,
+	x: -50,
+	scrollTrigger: "#about"
+})
+
+gsap.to(aboutImg, {
+	opacity: 1,
+	duration: 0.5,
+	x: 0,
+	scrollTrigger: "#about"
+})
+
+const aboutButton = document.querySelector("#about div a button")
+gsap.to(aboutButton, {
+	opacity: 0,
+	duration: 0,
+	x: +150,
+	scrollTrigger: "#about"
+})
+
+gsap.to(aboutButton, {
+	opacity: 1,
+	duration: 0.25,
+	x: 0,
+	scrollTrigger: "#about"
+})
+
+const aboutText = document.querySelector("#about div p")
+gsap.to(aboutText, {
+	opacity: 0,
+	duration: 0,
+	y: +150,
+	scrollTrigger: "#about"
+})
+
+gsap.to(aboutText, {
+	opacity: 1,
+	duration: 0.25,
+	y: 0,
+	scrollTrigger: "#about"
+})
+
+gsap.to("#contact", {
+	opacity: 0,
+	duration: 0,
+	scale: 0.5,
+	scrollTrigger: "#contact"
+	}
+)
+
+gsap.to("#contact", {
+	opacity: 1,
+	scale: 1,
+	duration: 0.25,
+	scrollTrigger: "#contact"
+	}
+)
+
+document.querySelectorAll("contact div ul li").forEach((li, i) => {
+	gsap.to(li, {
+		opacity: 0,
+		duration: 0,
+		y: -50,
+		scrollTrigger: "#contact"
+	})
+
+	gsap.to(li, {
+		opacity: 1,
+		duration: 0.5,
+		y: 0,
+		delay: 0.25 * i,
+		scrollTrigger: "#contact"
+	})
+});
+
+gsap.to("#footer", {
+	opacity: 0,
+	duration: 0,
+	y: 100,
+	scrollTrigger: "#footer"
+})
+
+
+gsap.to("#footer", {
+	opacity: 1,
+	duration: 0.5,
+	y: 0,
+	scrollTrigger: "#footer"
+})
+
+
+gsap.to("#footer>div", {
+	opacity: 0,
+	duration: 0,
+	y: 50,
+	scrollTrigger: "#footer"
+})
+
+
+gsap.to("#footer>div", {
+	opacity: 1,
+	duration: 0.5,
+	y: 0,
+	delay: 0.25,
+	scrollTrigger: "#footer"
+})
+</script>
