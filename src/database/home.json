@@ -92,11 +92,6 @@
   "social-media-title": "Redes Sociais",
   "social-media": [
     {
-      "name": "Facebook",
-      "link": "https://www.facebook.com/tgdgames/",
-      "icon": "facebook-outline"
-    },
-    {
       "name": "Instagram",
       "link": "https://www.instagram.com/tgdgames/",
       "icon": "instagram-outline"
@@ -105,6 +100,11 @@
       "name": "Twitter",
       "link": "https://twitter.com/TheGuardianDogS",
       "icon": "twitter-outline"
+    },
+    {
+      "name": "Facebook",
+      "link": "https://www.facebook.com/tgdgames/",
+      "icon": "facebook-outline"
     }
   ]
 }
