@@ -64,6 +64,22 @@
           "icon": "instagram-outline"
         }
       ]
+    },
+    {
+      "name": "Mayanderson \"Krono\"",
+      "role": "Artista 2D",
+      "connect": [
+        {
+          "name": "Instagram",
+          "link": "https://www.instagram.com/kronodraws/",
+          "icon": "instagram-outline"
+        },
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/KronoDraws",
+          "icon": "twitter-outline"
+        }
+      ]
     }
   ]
 }
