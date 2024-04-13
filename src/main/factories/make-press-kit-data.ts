@@ -25,7 +25,7 @@ const makePressKitData = () => ({
     title: navigationTitle,
     data: navigationData.map((link) => ({
       ...link,
-      url: `/press-kit${link.url}`,
+      url: `/TGD-Website-Client/press-kit${link.url}`,
     })),
   },
   repeatedSections,
@@ -41,6 +41,7 @@ const makePressKitData = () => ({
   history,
   description,
   videoPolicy,
+  // "video-policy": videoPolicy,
 });
 
 export { makePressKitData };

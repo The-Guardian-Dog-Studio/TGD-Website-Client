@@ -3,34 +3,26 @@
   "slug": "super-gattai",
   "banner": {
     "url": "/super-gattai-banner.png",
-    "alt": "Call of the Racket"
+    "alt": "Super Gattai"
   },
   "platforms": [
+
     {
       "name": "Itch.io",
-      "icon": "/TGD-Website-Client/steam.svg",
-      "link": "https://tgdstudio.itch.io/call-of-the-racket"
+      "icon": "/TGD-Website-Client/itch-io.svg",
+      "link": "https://negative-one.itch.io/super-gattai"
     },
     {
-      "name": "Steam",
-      "icon": "/TGD-Website-Client/steam.svg",
-      "link": "https://store.steampowered.com/"
-    },
-    {
-      "name": "PS4",
-      "icon": "/TGD-Website-Client/steam.svg",
-      "link": "https://store.playstation.com/pt-br/pages/latest"
+      "name": "Google Play",
+      "icon": "/TGD-Website-Client/google-play.svg",
+      "link": "https://play.google.com/store/apps/details?id=com.TheGuardianDogStudio.SuperGattai"
     }
   ],
   "images": [
     {
-      "url": "/call-of-the-racket.png",
-      "alt": "Call of the Racket"
-    },
-    {
       "url": "/super-gattai.png",
-      "alt": "Call of the Racket"
+      "alt": "Super Gattai"
     }
   ],
-  "description": "Robin, um jovem arqueólogo, tenta desvendar os mistérios de uma antiga civilização, os Makalanians.\nEm sua jornada, um Racket com poderes misteriosos, em uma caverna escondida cheia de monstros disparando balas mortais, se junta a Robin para explodir a morte de volta aos inimigos e sair vivo desta antiga masmorra."
+  "description": "Super Gattai é sobre garantir que uma cidade permaneça de pé e continue se desenvolvendo, mesmo quando está sendo destruída constantemente por monstros que aparecem todo domingo, usando os poderosos Mekagears, robôs gigantes formados de diversas partes que quando combinadas criam o defensor da cidade!"
 }

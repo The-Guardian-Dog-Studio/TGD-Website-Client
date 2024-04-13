@@ -16,7 +16,7 @@ const Seo = ({ title, description, media }: SeoProps): JSX.Element => {
   const imageContent =
     media?.image ??
     "https://img.itch.zone/aW1nLzkwODU4NDcucG5n/original/biEzHp.png";
-  const urlContent = media?.url ?? "https://www.tgdstudio.com.br";
+  const urlContent = media?.url ?? "https://the-guardian-dog-studio.github.io/TGD-Website-Client/";
 
   return (
     <>

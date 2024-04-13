@@ -1,5 +1,5 @@
 {
-  "site-url": "https://tgdstudio.com.br",
+  "site-url": "https://the-guardian-dog-studio.github.io/TGD-Website-Client/",
   "navigation-title": "TGD Studio",
   "navigation": [
     {
@@ -16,7 +16,7 @@
     },
     {
       "text": "Política de Vídeo",
-      "url": "#video-policy"
+      "url": "#videoPolicy"
     },
     {
       "text": "Projetos",
@@ -69,8 +69,8 @@
         "title": "Website:",
         "content": [
           {
-            "url": "https://tgdstudio.com.br",
-            "text": "https://tgdstudio.com.br"
+            "url": "https://the-guardian-dog-studio.github.io/TGD-Website-Client/",
+            "text": "https://the-guardian-dog-studio.github.io/TGD-Website-Client/"
           }
         ]
       },
