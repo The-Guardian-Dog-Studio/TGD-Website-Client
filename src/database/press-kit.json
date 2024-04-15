@@ -89,14 +89,14 @@
         ]
       },
       {
-        "title": "Releases:",
+        "title": "Releases(unused):",
         "content": [
           {
-            "url": "https://negative-one.itch.io/super-gattai",
+            "url": "/super-gattai",
             "text": "Super Gattai"
           },
           {
-            "url": "https://tgdstudio.itch.io/call-of-the-racket",
+            "url": "/call-of-the-racket",
             "text": "Call of the Racket"
           }
         ]
@@ -141,12 +141,13 @@
     "title": "Projetos",
     "content": [
       {
-        "url": "https://tgdstudio.itch.io/call-of-the-racket",
+        "url": "/games/call-of-the-racket",
         "text": "Call of the Racket"
       },
       {
-        "text": "Super Gattai",
-        "url": "https://negative-one.itch.io/super-gattai"
+        "url": "/games/super-gattai",
+        "text": "Super Gattai"
+        
       }
     ]
   },
