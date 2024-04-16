@@ -2,94 +2,82 @@
   "title": "Equipe",
   "content": [
     {
-      "name": "Saulo Camarotti",
-      "role": "Fundador, Produtor e Desenvolvedor",
+      "name": "Davi \"DfindWox\" Sampaio",
+      "role": "Produtor Executivo",
       "connect": [
         {
-          "name": "Linkedin",
-          "link": "https://www.linkedin.com/in/saulocamarotti/",
-          "icon": "linkedin-outline"
-        },
-        {
-          "name": "Instagram",
-          "link": "https://www.instagram.com/in/saulocamarotti/",
-          "icon": "instagram-outline"
+          "name": "Discord",
+          "link": "https://discord.com/users/163820392404746240",
+          "icon": "discord-outline"
         }
       ]
     },
     {
-      "name": "Guilherme Mazzano",
-      "role": "Game Designer",
+      "name": "Oscar \"Meikyu\"",
+      "role": "Produtor Desenvolvedor",
       "connect": [
         {
-          "name": "Linkedin",
-          "link": "https://www.linkedin.com/in/saulocamarotti/",
-          "icon": "linkedin-outline"
+          "name": "Twitter",
+          "link": "https://twitter.com/MeiqyuAmrade",
+          "icon": "twitter-outline"
         },
         {
           "name": "Portfolio",
-          "link": "https://www.portfolio.com/in/saulocamarotti/",
+          "link": "https://meiqyu.carrd.co/",
           "icon": "portfolio-outline"
         }
       ]
     },
     {
-      "name": "Leonardo Prunk",
-      "role": "Desenvolvedor",
+      "name": "Ana \"Potatoana\" Menezes",
+      "role": "Produtora Publicadora, Artista 2D",
       "connect": [
         {
-          "name": "Linkedin",
-          "link": "https://www.linkedin.com/in/saulocamarotti/",
-          "icon": "linkedin-outline"
+          "name": "Instagram",
+          "link": "https://www.instagram.com/potatoana/",
+          "icon": "instagram-outline"
+        },
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/_Potatoana",
+          "icon": "twitter-outline"
+        },
+        {
+          "name": "Portfolio",
+          "link": "https://potatoana.mystrikingly.com/",
+          "icon": "portfolio-outline"
         }
       ]
     },
     {
-      "name": "Leonardo Prunk",
-      "role": "Desenvolvedor",
+      "name": "Julien \"Jinnie\"",
+      "role": "Produtor Associado",
       "connect": [
         {
-          "name": "Linkedin",
-          "link": "https://www.linkedin.com/in/saulocamarotti/",
-          "icon": "linkedin-outline"
-        }
-      ]
-    },
-    {
-      "name": "Leonardo Prunk",
-      "role": "Desenvolvedor",
-      "connect": [
-        {
-          "name": "Linkedin",
-          "link": "https://www.linkedin.com/in/saulocamarotti/",
-          "icon": "linkedin-outline"
-        }
-      ]
-    },
-    {
-      "name": "Leonardo Prunk",
-      "role": "Desenvolvedor",
-      "connect": [
-        {
-          "name": "Linkedin",
-          "link": "https://www.linkedin.com/in/saulocamarotti/",
-          "icon": "linkedin-outline"
+          "name": "Twitter",
+          "link": "https://twitter.com/jinneartwork",
+          "icon": "twitter-outline"
         },
         {
           "name": "Instagram",
-          "link": "https://www.instagram.com/in/saulocamarotti/",
+          "link": "https://www.instagram.com/jinneartwork/",
           "icon": "instagram-outline"
         }
       ]
     },
     {
-      "name": "Leonardo Prunk",
-      "role": "Desenvolvedor",
+      "name": "Mayanderson \"Krono\"",
+      "role": "Artista 2D",
       "connect": [
         {
-          "name": "Linkedin",
-          "link": "https://www.linkedin.com/in/saulocamarotti/",
-          "icon": "linkedin-outline"
+          "name": "Instagram",
+          "link": "https://www.instagram.com/kronodraws/",
+          "icon": "instagram-outline"
+        },
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/KronoDraws",
+          "icon": "twitter-outline"
         }
       ]
     }
