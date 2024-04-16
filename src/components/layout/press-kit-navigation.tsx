@@ -24,7 +24,10 @@ const PressKitNavigation = ({
       )}
 
       {!isDesktop && (
-        <header className="sticky top-0 z-50 col-start-1 col-end-13 h-20 w-full bg-white py-4 shadow-xl shadow-black/20 lg:hidden">
+        <header
+          id="header"
+          className="sticky top-0 z-50 col-start-1 col-end-13 h-20 w-full bg-white py-4 shadow-xl shadow-black/20 lg:hidden"
+        >
           <div className="m-auto flex w-11/12 max-w-screen-xl items-center justify-between">
             <Logo />
             <MenuLib as="div" className="relative inline-block text-left">

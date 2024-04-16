@@ -15,6 +15,7 @@ const SideBar = ({ navigationLinks, siteUrl }: SideBarProps): JSX.Element => {
 
   return (
     <aside
+      id="sidebar"
       aria-hidden={!isVisible}
       className="sticky top-0 col-start-1 col-end-4 hidden h-fit flex-col justify-start border-r-2 border-solid border-r-gray-400 py-12 pl-12 pr-16 lg:flex"
     >
