@@ -1,5 +1,5 @@
 {
-  "site-url": "https://tgdstudio.com.br",
+  "site-url": "https://the-guardian-dog-studio.github.io/TGD-Website-Client/",
   "navigation-title": "TGD Studio",
   "navigation": [
     {
@@ -16,7 +16,7 @@
     },
     {
       "text": "Política de Vídeo",
-      "url": "#video-policy"
+      "url": "#videoPolicy"
     },
     {
       "text": "Projetos",
@@ -33,14 +33,6 @@
     {
       "text": "Logo & Ícones",
       "url": "#logo-and-icons"
-    },
-    {
-      "text": "Prêmios & Reconhecimento",
-      "url": "#awards-and-recognition"
-    },
-    {
-      "text": "Artigos Selecionados",
-      "url": "#selected-articles"
     },
     {
       "text": "Equipe",
@@ -69,8 +61,8 @@
         "title": "Website:",
         "content": [
           {
-            "url": "https://tgdstudio.com.br",
-            "text": "https://tgdstudio.com.br"
+            "url": "https://the-guardian-dog-studio.github.io/TGD-Website-Client/",
+            "text": "https://the-guardian-dog-studio.github.io/TGD-Website-Client/"
           }
         ]
       },
@@ -97,14 +89,14 @@
         ]
       },
       {
-        "title": "Releases:",
+        "title": "Releases(unused):",
         "content": [
           {
-            "url": "https://negative-one.itch.io/super-gattai",
+            "url": "/super-gattai",
             "text": "Super Gattai"
           },
           {
-            "url": "https://tgdstudio.itch.io/call-of-the-racket",
+            "url": "/call-of-the-racket",
             "text": "Call of the Racket"
           }
         ]
@@ -149,12 +141,13 @@
     "title": "Projetos",
     "content": [
       {
-        "url": "https://tgdstudio.itch.io/call-of-the-racket",
+        "url": "/games/call-of-the-racket",
         "text": "Call of the Racket"
       },
       {
-        "text": "Super Gattai",
-        "url": "https://negative-one.itch.io/super-gattai"
+        "url": "/games/super-gattai",
+        "text": "Super Gattai"
+        
       }
     ]
   },
@@ -212,7 +205,7 @@
   "awards-and-recognition": {
     "title": "Prêmios & Reconhecimento",
     "content": [
-      "\"Innovation Category Nominee: Knights of Pen and Paper\" - IMGA 2013"
+      "\"Melhor Jogo Cearense 2020\" - UCEG - União Cearense de Gamers"
     ]
   },
   "selected-articles": {

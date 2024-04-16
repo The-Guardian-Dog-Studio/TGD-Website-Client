@@ -12,7 +12,7 @@ const {
   images,
   logos,
   "awards-and-recognition": awards,
-  "selected-articles": articles,
+  // "selected-articles": articles,
   contact,
   history,
   description,
@@ -25,7 +25,7 @@ const makePressKitData = () => ({
     title: navigationTitle,
     data: navigationData.map((link) => ({
       ...link,
-      url: `/press-kit${link.url}`,
+      url: `/TGD-Website-Client/press-kit${link.url}`,
     })),
   },
   repeatedSections,
@@ -35,12 +35,13 @@ const makePressKitData = () => ({
   images,
   logos,
   awards,
-  articles,
+  // articles,
   team: makeTeamData(),
   contact,
   history,
   description,
   videoPolicy,
+  // "video-policy": videoPolicy,
 });
 
 export { makePressKitData };
